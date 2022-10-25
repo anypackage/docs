@@ -1,7 +1,7 @@
 ---
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
-online version:
+online version: go.anypackage.dev/Get-PackageSource
 schema: 2.0.0
 ---
 
@@ -90,6 +90,8 @@ This cmdlet returns objects that represent a package source.
 
 ## Related Links
 
-* [Register-PackageSource](Register-PackageSource.md)
-* [Set-PackageSource](Set-PackageSource.md)
-* [Unregister-PackageSource](Unregister-PackageSource.md)
+[Register-PackageSource](Register-PackageSource.md)
+
+[Set-PackageSource](Set-PackageSource.md)
+
+[Unregister-PackageSource](Unregister-PackageSource.md)

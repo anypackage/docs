@@ -1,7 +1,7 @@
 ---
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
-online version:
+online version: go.anypackage.dev/Get-Package
 schema: 2.0.0
 ---
 
@@ -133,9 +133,14 @@ This cmdlet returns objects that represent a package.
 
 ## Related Links
 
-* [Find-Package](Find-Package.md)
-* [Install-Package](Install-Package.md)
-* [Publish-Package](Publish-Package.md)
-* [Save-Package](Save-Package.md)
-* [Update-Package](Update-Package.md)
-* [Uninstall-Package](Uninstall-Package.md)
+[Find-Package](Find-Package.md)
+
+[Install-Package](Install-Package.md)
+
+[Publish-Package](Publish-Package.md)
+
+[Save-Package](Save-Package.md)
+
+[Update-Package](Update-Package.md)
+
+[Uninstall-Package](Uninstall-Package.md)

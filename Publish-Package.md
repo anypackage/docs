@@ -1,7 +1,7 @@
 ---
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
-online version:
+online version: go.anypackage.dev/Publish-Package
 schema: 2.0.0
 ---
 
@@ -150,9 +150,14 @@ By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter
 
 ## Related Links
 
-* [Get-Package](Get-Package.md)
-* [Find-Package](Find-Package.md)
-* [Install-Package](Install-Package.md)
-* [Save-Package](Save-Package.md)
-* [Update-Package](Update-Package.md)
-* [Uninstall-Package](Uninstall-Package.md)
+[Get-Package](Get-Package.md)
+
+[Find-Package](Find-Package.md)
+
+[Install-Package](Install-Package.md)
+
+[Save-Package](Save-Package.md)
+
+[Update-Package](Update-Package.md)
+
+[Uninstall-Package](Uninstall-Package.md)

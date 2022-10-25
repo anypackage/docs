@@ -1,7 +1,7 @@
 ---
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
-online version:
+online version: go.anypackage.dev/Unregister-PackageSource
 schema: 2.0.0
 ---
 
@@ -136,6 +136,8 @@ By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter
 
 ## Related Links
 
-* [Get-PackageSource](Get-PackageSource.md)
-* [Register-PackageSource](Register-PackageSource.md)
-* [Set-PackageSource](Set-PackageSource.md)
+[Get-PackageSource](Get-PackageSource.md)
+
+[Register-PackageSource](Register-PackageSource.md)
+
+[Set-PackageSource](Set-PackageSource.md)

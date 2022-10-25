@@ -1,7 +1,7 @@
 ---
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
-online version:
+online version: go.anypackage.dev/Get-PackageProvider
 schema: 2.0.0
 ---
 
@@ -74,5 +74,6 @@ This cmdlet returns objects that represent a package provider.
 
 ## Related Links
 
-* Import-Module
-* Remove-Module
+[Import-Module](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/import-module)
+
+[Remove-Module](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/remove-module)
