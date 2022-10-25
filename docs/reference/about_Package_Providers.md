@@ -1,3 +1,7 @@
+---
+parent: AnyPackage
+---
+
 # Package_Providers
 
 ## about_Package_Providers

@@ -1,3 +1,7 @@
+---
+parent: AnyPackage
+---
+
 # AnyPackage
 
 ## about_AnyPackage

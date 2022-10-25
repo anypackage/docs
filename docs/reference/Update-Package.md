@@ -3,6 +3,7 @@ external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
 online version: go.anypackage.dev/Update-Package
 schema: 2.0.0
+parent: AnyPackage
 ---
 
 # Update-Package

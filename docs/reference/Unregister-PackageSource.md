@@ -3,6 +3,7 @@ external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
 online version: go.anypackage.dev/Unregister-PackageSource
 schema: 2.0.0
+parent: AnyPackage
 ---
 
 # Unregister-PackageSource
