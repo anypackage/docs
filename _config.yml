@@ -1,1 +1,3 @@
 remote_theme: just-the-docs/just-the-docs
+title: AnyPackage
+description: A PowerShell universal package manager.
