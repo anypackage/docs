@@ -66,7 +66,7 @@ Removes a registered a package source.
 
 Updates an installed package.
 
-## About
+## About Topics
 
 ### [about_Creating_Package_Providers](about_Creating_Package_Providers.md)
 

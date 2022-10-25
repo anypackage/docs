@@ -12,7 +12,7 @@ has_toc: false
 
 Contains information about general usage to creating a package provider.
 
-## About Topics
+## Topics
 
 ### [about_AnyPackage](about_AnyPackage.md)
 
