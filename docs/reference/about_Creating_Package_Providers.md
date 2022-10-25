@@ -1,4 +1,5 @@
 ---
+title: about_Creating_Package_Providers
 parent: AnyPackage
 ---
 
