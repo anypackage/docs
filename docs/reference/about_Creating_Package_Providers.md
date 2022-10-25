@@ -1,6 +1,7 @@
 ---
 title: about_Creating_Package_Providers
 parent: AnyPackage
+nav_order: 2
 ---
 
 # Creating_Package_Providers
