@@ -7,7 +7,6 @@ Locale: en-US
 title: AnyPackage
 has_children: true
 has_toc: false
-permalink: docs/reference/AnyPackage
 ---
 
 # AnyPackage Module
