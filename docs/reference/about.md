@@ -2,6 +2,7 @@
 title: About
 parent: AnyPackage
 has_children: true
+nav_order: 1
 ---
 
 # About
