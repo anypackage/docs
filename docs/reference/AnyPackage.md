@@ -14,9 +14,9 @@ permalink: docs/reference/AnyPackage
 
 ## Description
 
-Contains cmdlets that interact with package management systems.
+Contains commands that interact with package management systems.
 
-## Cmdlets
+## Commands
 
 ### [Find-Package](Find-Package.md)
 
