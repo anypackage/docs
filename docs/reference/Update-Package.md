@@ -14,7 +14,7 @@ Updates a package.
 
 ## Syntax
 
-### Name
+### Name (Default)
 
 ```powershell
 Update-Package [[-Name] <String[]>] [[-Version] <VersionRange>] [-Source <String>] [-Prerelease] [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -162,17 +162,7 @@ Specifies the package version.
 The format is NuGet version range syntax with minor changes.
 In normal NuGet version range value of `1.0` would be minimum version inclusive but this parameter converts that value to be exact version of `[1.0]`.
 If you need to have minimum version inclusive then use this format `[1.0,]`.
-
-| Notation  | Applied rule  | Description                                     |
-| --------  | ------------  | -----------                                     |
-| [1.0,]    | x ≥ 1.0       | Minimum version, inclusive                      |
-| (1.0,)    | x > 1.0       | Minimum version, exclusive                      |
-| [1.0]     | x == 1.0      | Exact version match                             |
-| (,1.0]    | x ≤ 1.0       | Maximum version, inclusive                      |
-| (,1.0)    | x < 1.0       | Maximum version, exclusive                      |
-| [1.0,2.0] | 1.0 ≤ x ≤ 2.0 | Exact range, inclusive                          |
-| (1.0,2.0) | 1.0 < x < 2.0 | Exact range, exclusive                          |
-| [1.0,2.0) | 1.0 ≤ x < 2.0 | Inclusive minimum and exclusive maximum version |
+For more information refer to [NuGet version range syntax](https://learn.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges).
 
 ```yaml
 Type: VersionRange
