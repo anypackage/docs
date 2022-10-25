@@ -6,6 +6,7 @@ Help Version: 0.1.0.0
 Locale: en-US
 title: AnyPackage
 has_children: true
+has_toc: false
 permalink: docs/reference/AnyPackage
 ---
 
