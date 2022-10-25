@@ -1,6 +1,7 @@
 ---
 title: about_AnyPackage
-parent: AnyPackage
+parent: About
+grand_parent: AnyPackage
 nav_order: 1
 ---
 
