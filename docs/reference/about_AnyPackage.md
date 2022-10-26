@@ -15,7 +15,7 @@ Describes what the `AnyPackage` module is and how to use it.
 
 ## Long Description
 
-The `AnyPackage` is not a package management system in the traditional sense but rather a way to interact with multiple package management systems.
+`AnyPackage` is not a package management system in the traditional sense but rather a way to interact with multiple package management systems.
 This lets users have a single set of commands to interact with any package management system instead of learning a unique set of commands.
 
 ## Package Providers
