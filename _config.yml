@@ -3,5 +3,5 @@ title: AnyPackage
 description: A PowerShell universal package manager.
 permalink: /:categories/:title
 aux_links:
-  "GitHub"
+  "GitHub":
     - "https://github.com/AnyPackage/AnyPackage"
