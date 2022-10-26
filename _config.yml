@@ -5,3 +5,9 @@ permalink: /:categories/:title
 aux_links:
   "GitHub":
     - "https://github.com/AnyPackage/AnyPackage"
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/ThomasNieto/Docs"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"
