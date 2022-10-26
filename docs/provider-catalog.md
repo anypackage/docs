@@ -12,6 +12,8 @@ To find the latest providers please use the following command.
 Find-PSResource -Tag AnyPackage, Provider
 ```
 
+## Package Managers
+
 | Package Manager | Project Page    |
 | --------------- | --------------- |
 | PowerShellGet   | [AnyPackage/AnyPackage.PowerShellGet](https://github.com/AnyPackage/AnyPackage.PowerShellGet) |
