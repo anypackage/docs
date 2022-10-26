@@ -1,5 +1,5 @@
 ---
-permalink: /help
+permalink: help
 ---
 
 # PowerShell Updatable Help
