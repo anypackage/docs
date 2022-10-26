@@ -2,3 +2,6 @@ remote_theme: just-the-docs/just-the-docs
 title: AnyPackage
 description: A PowerShell universal package manager.
 permalink: /:categories/:title
+aux_links:
+  "GitHub"
+    - "https://github.com/AnyPackage/AnyPackage"
