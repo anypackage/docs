@@ -42,7 +42,7 @@ Specifies the search path.
 
 * Get-Package
 
-### Scope <Microsoft.PowerShell.PowerShellGet.UtilClasses.ScopeType>
+### Scope \<Microsoft.PowerShell.PowerShellGet.UtilClasses.ScopeType\>
 
 Specifies the scope of the resource.
 
@@ -50,7 +50,7 @@ Specifies the scope of the resource.
 
 * Get-Package
 
-### Scope <Microsoft.PowerShell.PowerShellGet.UtilClasses.ScopeType>
+### Scope \<Microsoft.PowerShell.PowerShellGet.UtilClasses.ScopeType\>
 
 Specifies the scope of the resource. Scope types supported are:
 
@@ -61,7 +61,7 @@ Specifies the scope of the resource. Scope types supported are:
 
 * Get-Package
 
-### Tag <System.String>
+### Tag \<System.String\>
 
 Filters search results for resources that include one or more of the specified tags.
 
@@ -69,7 +69,7 @@ Filters search results for resources that include one or more of the specified t
 
 * Find-Package
 
-### Type <Microsoft.PowerShell.PowerShellGet.UtilClasses.ResourceType>
+### Type \<Microsoft.PowerShell.PowerShellGet.UtilClasses.ResourceType\>
 
 Specifies one or more resource types to find. Resource types supported are:
 
