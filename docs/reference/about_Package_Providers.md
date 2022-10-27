@@ -25,7 +25,7 @@ The user is responsible for which providers are available.
 To import a package provider run `Import-Module` with the module containing the provider.
 
 > NOTE! Once a package provider is imported trying to load a different version requires PowerShell to be restarted.
-This is due to how .NET does not remove loaded types.
+This is due to how .NET does not reload types.
 
 ## Removing a Package Provider
 
