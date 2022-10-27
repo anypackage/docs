@@ -15,7 +15,7 @@ Provides access to PowerShellGet.
 
 The PowerShellGet package provider for `AnyPackage` module lets you use PowerShellGet using standardized commands.
 
-The `PowerShellGet` package provider supports the following cmdlets.
+The PowerShellGet package provider supports the following cmdlets.
 
 * Find-Package
 * Get-Package
@@ -52,7 +52,10 @@ Specifies the scope of the resource.
 
 ### Scope <Microsoft.PowerShell.PowerShellGet.UtilClasses.ScopeType>
 
-Specifies the scope of the resource.
+Specifies the scope of the resource. Scope types supported are:
+
+* CurrentUser
+* AllUsers
 
 #### Cmdlets Supported
 
