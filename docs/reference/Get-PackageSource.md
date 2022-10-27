@@ -1,7 +1,7 @@
 ---
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
-online version: go.anypackage.dev/Get-PackageSource
+online version: https://go.anypackage.dev/Get-PackageSource
 schema: 2.0.0
 parent: AnyPackage
 ---

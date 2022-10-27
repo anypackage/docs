@@ -1,7 +1,7 @@
 ---
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
-online version: go.anypackage.dev/Uninstall-Package
+online version: https://go.anypackage.dev/Uninstall-Package
 schema: 2.0.0
 parent: AnyPackage
 ---
