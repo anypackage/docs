@@ -73,10 +73,10 @@ Filters search results for resources that include one or more of the specified t
 
 Specifies one or more resource types to find. Resource types supported are:
 
-* `Module`
-* `Script`
-* `Command`
-* `DscResource`
+* Module
+* Script
+* Command
+* DscResource
 
 #### Cmdlets Supported
 
