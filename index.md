@@ -14,7 +14,7 @@ AnyPackage is built on PowerShell giving users the ability to manage Windows, Li
 ## What is a Package Provider?
 
 A package provider is the interface for AnyPackage to interact with the various package management systems.
-See the [provider catalog](/docs/provider-catalog.md) for the list of package providers.
+See the [provider catalog](/docs/provider-catalog) for the list of package providers.
 
 ## Installing AnyPackage
 
