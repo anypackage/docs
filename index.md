@@ -18,7 +18,7 @@ See the [provider catalog](/docs/provider-catalog/provider-catalog.md) for the l
 
 ## Installing AnyPackage
 
-To install AnyPackage you use the built-in PowerShell package manager PowerShellGet.
+To install AnyPackage use the built-in PowerShell package manager PowerShellGet.
 
 Launch PowerShell and run the following command.
 
