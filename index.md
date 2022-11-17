@@ -7,9 +7,9 @@ nav_order: 1
 ## What is AnyPackage?
 
 AnyPackage is not a package management system in the traditional sense but rather a way to interact with multiple package management systems.
-This lets users have a single set of commands to interact with any package management system instead of learning a unique set of commands.
+This lets users have a single set of commands to interact with any package management system.
 
-AnyPackage is built on PowerShell giving users the ability to manage Windows, Linux, and MacOS.
+AnyPackage is built on PowerShell giving users the ability to manage Windows, Linux, and Mac.
 
 ## What is a Package Provider?
 
