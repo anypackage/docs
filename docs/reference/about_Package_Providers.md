@@ -43,9 +43,9 @@ The PowerShell engine has some limitations at this time on how discoverable dyna
 To make this as easy as possible use the following recommendations:
 
 * `Provider` parameter should be before any provider specific parameters.
-* Use `PSReadline` menu complete (CTRL+SPACE) or tab completion.
+* Use `PSReadLine` menu complete (CTRL+SPACE) or tab completion.
 
-Here is an example of using `PSReadline` menu complete and provider parameters.
+Here is an example of using `PSReadLine` menu complete and provider parameters.
 The first command is using menu complete without any parameters.
 Take note of how `Tag` is not present.
 Type `Find-Package -` followed by CTRL+SPACE to bring up menu complete.
