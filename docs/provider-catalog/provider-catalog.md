@@ -19,4 +19,5 @@ Find-PSResource -Tag AnyPackage, Provider
 
 | Package Manager | Project Page    |
 | --------------- | --------------- |
+| Chocolatey      | [AnyPackage/AnyPackage.Chocolatey](https://github.com/AnyPackage/AnyPackage.Chocolatey) |
 | PowerShellGet   | [AnyPackage/AnyPackage.PowerShellGet](https://github.com/AnyPackage/AnyPackage.PowerShellGet) |
