@@ -21,3 +21,4 @@ Find-PSResource -Tag AnyPackage, Provider
 | --------------- | --------------- |
 | Chocolatey      | [AnyPackage/AnyPackage.Chocolatey](https://github.com/AnyPackage/AnyPackage.Chocolatey) |
 | PowerShellGet   | [AnyPackage/AnyPackage.PowerShellGet](https://github.com/AnyPackage/AnyPackage.PowerShellGet) |
+| Scoop           | [AnyPackage/AnyPackage.Scoop](https://github.com/AnyPackage/AnyPackage.Scoop) |
