@@ -17,8 +17,8 @@ Find-PSResource -Tag AnyPackage, Provider
 
 ## Package Managers
 
-| Package Manager | Project Page    |
-| --------------- | --------------- |
-| Chocolatey      | [AnyPackage/AnyPackage.Chocolatey](https://github.com/AnyPackage/AnyPackage.Chocolatey) |
-| PowerShellGet   | [AnyPackage/AnyPackage.PowerShellGet](https://github.com/AnyPackage/AnyPackage.PowerShellGet) |
-| Scoop           | [AnyPackage/AnyPackage.Scoop](https://github.com/AnyPackage/AnyPackage.Scoop) |
+| Package Manager | Module Name              | Project Page    |
+| --------------- | ------------------------ | --------------- |
+| Chocolatey      | AnyPackage.Chocolatey    | [AnyPackage/AnyPackage.Chocolatey](https://github.com/AnyPackage/AnyPackage.Chocolatey) |
+| PowerShellGet   | AnyPackage.PowerShellGet | [AnyPackage/AnyPackage.PowerShellGet](https://github.com/AnyPackage/AnyPackage.PowerShellGet) |
+| Scoop           | AnyPackage.Scoop         | [AnyPackage/AnyPackage.Scoop](https://github.com/AnyPackage/AnyPackage.Scoop) |
