@@ -1,21 +1,21 @@
 ---
-title: Winget
+title: WinGet
 parent: Provider Catalog
 ---
 
-# Winget_Package_Provider
+# WinGet_Package_Provider
 
-## about_Winget_Package_Provider
+## about_WinGet_Package_Provider
 
 ## Short Description
 
-Provides access to Winget.
+Provides access to WinGet.
 
 ## Long Description
 
-The Winget package provider for `AnyPackage` module lets you use Winget using standardized commands.
+The WinGet package provider for `AnyPackage` module lets you use WinGet using standardized commands.
 
-The Winget package provider supports the following cmdlets.
+The WinGet package provider supports the following cmdlets.
 
 * Find-Package
 * Get-Package
@@ -29,9 +29,9 @@ The Winget package provider supports the following cmdlets.
 ## Dynamic Parameters
 
 Dynamic parameters are cmdlet parameters that are added by a package
-provider and are available only when `-Provider Winget` parameter is used.
+provider and are available only when `-Provider WinGet` parameter is used.
 
-The Winget provider currently has no dynamic parameters. 
+The WinGet provider currently has no dynamic parameters. 
 
 ## See Also
 
