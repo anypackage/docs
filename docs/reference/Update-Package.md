@@ -2,35 +2,35 @@
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
 online version: https://go.anypackage.dev/Update-Package
-schema: 2.0.0
 parent: AnyPackage
+schema: 2.0.0
 ---
 
 # Update-Package
 
-## Synopsis
+## SYNOPSIS
 
 Updates a package.
 
-## Syntax
+## SYNTAX
 
 ### Name (Default)
-
-```powershell
-Update-Package [[-Name] <String[]>] [[-Version] <VersionRange>] [-Source <String>] [-Prerelease] [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+Update-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Source <String>] [-Prerelease]
+ [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### InputObject
-
-```powershell
-Update-Package [-InputObject] <PackageInfo[]> [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+Update-Package [-PassThru] [-TrustSource] [-Provider <String>] [-InputObject] <PackageInfo[]> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-## Description
+## DESCRIPTION
 
 Updates a package.
 
-## Examples
+## EXAMPLES
 
 ### Example 1
 
@@ -40,7 +40,7 @@ PS C:\> Update-Package -Name PowerShellGet
 
 This command updates `PowerShellGet` package.
 
-## Parameters
+## PARAMETERS
 
 ### -InputObject
 
@@ -71,8 +71,8 @@ Aliases:
 
 Required: False
 Position: 0
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Default value: *
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: True
 ```
 
@@ -136,7 +136,7 @@ Aliases: Repository
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -165,14 +165,14 @@ If you need to have minimum version inclusive then use this format `[1.0,]`.
 For more information refer to [NuGet version range syntax](https://learn.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges).
 
 ```yaml
-Type: VersionRange
+Type: PackageVersionRange
 Parameter Sets: Name
 Aliases:
 
 Required: False
 Position: 1
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -210,24 +210,23 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-## Inputs
+## INPUTS
 
-### System.String, NuGet.Versioning.VersionRange, AnyPackage.Provider.PackageInfo
+### System.String, AnyPackage.Provider.PackageVersionRange, AnyPackage.Provider.PackageInfo
 
 You can pipe a package name, version range, and package info to this cmdlet.
 
-## Outputs
+## OUTPUTS
 
 ### AnyPackage.Provider.PackageInfo
 
 By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter to a return objects that represent a package.
 
-## Notes
+## NOTES
 
-## Related Links
+## RELATED LINKS
 
 [Get-Package](Get-Package.md)
 

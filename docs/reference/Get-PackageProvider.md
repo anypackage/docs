@@ -2,27 +2,27 @@
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
 online version: https://go.anypackage.dev/Get-PackageProvider
-schema: 2.0.0
 parent: AnyPackage
+schema: 2.0.0
 ---
 
 # Get-PackageProvider
 
-## Synopsis
+## SYNOPSIS
 
 Gets imported package providers.
 
-## Syntax
+## SYNTAX
 
-```powershell
-Get-PackageProvider [[-Name] <String[]>] [<CommonParameters>]
+```
+Get-PackageProvider [[-Name] <String[]>] [-ListAvailable] [<CommonParameters>]
 ```
 
-## Description
+## DESCRIPTION
 
 Gets imported package providers.
 
-## Examples
+## EXAMPLES
 
 ### Example 1
 
@@ -37,7 +37,7 @@ PowerShellGet             100 Find, Get, Publish, Install, Save, Uninstall, Upda
 
 The command gets the imported package providers.
 
-## Parameters
+## PARAMETERS
 
 ### -Name
 
@@ -50,30 +50,45 @@ Aliases: Provider
 
 Required: False
 Position: 0
-Default value: None
+Default value: *
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: True
 ```
 
-### CommonParameters
+### -ListAvailable
 
+Get list of available package providers in modules in `$env:PSModulePath`.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-## Inputs
+## INPUTS
 
 ### System.String
 
 You can pipe a package provider name to this cmdlet.
 
-## Outputs
+## OUTPUTS
 
 ### AnyPackage.Provider.PackageProviderInfo
 
 This cmdlet returns objects that represent a package provider.
 
-## Notes
+## NOTES
 
-## Related Links
+## RELATED LINKS
 
 [Import-Module](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/import-module)
 
