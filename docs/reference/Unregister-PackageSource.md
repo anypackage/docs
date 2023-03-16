@@ -2,28 +2,28 @@
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
 online version: https://go.anypackage.dev/Unregister-PackageSource
-schema: 2.0.0
 parent: AnyPackage
+schema: 2.0.0
 ---
 
 # Unregister-PackageSource
 
-## Synopsis
+## SYNOPSIS
 
 Unregister a package source.
 
-## Syntax
+## SYNTAX
 
-```powershell
+```
 Unregister-PackageSource [-Name] <String[]> [-Provider <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-## Description
+## DESCRIPTION
 
 Unregister a package source.
 
-## Examples
+## EXAMPLES
 
 ### Example 1
 
@@ -33,7 +33,7 @@ PS C:\> Unregister-PackageSource -Name PSGallery
 
 This command removes the `PSGallery` as a package source.
 
-## Parameters
+## PARAMETERS
 
 ### -Name
 
@@ -118,24 +118,23 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-## Inputs
+## INPUTS
 
 ### System.String
 
 You can use the pipeline to send a string for the source name.
 
-## Outputs
+## OUTPUTS
 
 ### AnyPackage.Provider.PackageSourceInfo
 
 By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter to a return objects that represent a package source.
 
-## Notes
+## NOTES
 
-## Related Links
+## RELATED LINKS
 
 [Get-PackageSource](Get-PackageSource.md)
 

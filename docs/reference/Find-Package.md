@@ -2,27 +2,28 @@
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
 online version: https://go.anypackage.dev/Find-Package
-schema: 2.0.0
 parent: AnyPackage
+schema: 2.0.0
 ---
 
 # Find-Package
 
-## Synopsis
+## SYNOPSIS
 
 Finds packages in package sources.
 
-## Syntax
+## SYNTAX
 
-```powershell
-Find-Package [[-Name] <String[]>] [[-Version] <VersionRange>] [-Source <String> [-Prerelease] [-Provider <String>] [<CommonParameters>]
+```
+Find-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Source <String>] [-Prerelease]
+ [-Provider <String>] [<CommonParameters>]
 ```
 
-## Description
+## DESCRIPTION
 
 Finds packages in package sources.
 
-## Examples
+## EXAMPLES
 
 ### Example 1: Find all packages
 
@@ -50,7 +51,7 @@ Microsoft.PowerShell.ConsoleGuiTools     0.7.2.0         PSGallery            Po
 
 The command finds packages from `PowerShellGet` package provider.
 
-## Parameters
+## PARAMETERS
 
 ### -Name
 
@@ -63,7 +64,7 @@ Aliases:
 
 Required: False
 Position: 0
-Default value: None
+Default value: *
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: True
 ```
@@ -125,36 +126,35 @@ If you need to have minimum version inclusive then use this format `[1.0,]`.
 For more information refer to [NuGet version range syntax](https://learn.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges).
 
 ```yaml
-Type: VersionRange
+Type: PackageVersionRange
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: 1
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see.
+## INPUTS
 
-## Inputs
-
-### System.String, NuGet.Versioning.VersionRange
+### System.String, AnyPackage.Provider.PackageVersionRange
 
 You can pipe a package name and version range to this cmdlet.
 
-## Outputs
+## OUTPUTS
 
 ### AnyPackage.Provider.PackageInfo
 
 This cmdlet returns objects that represent a package.
 
-## Notes
+## NOTES
 
-## Related Links
+## RELATED LINKS
 
 [Get-Package](Get-Package.md)
 

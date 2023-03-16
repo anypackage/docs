@@ -2,27 +2,28 @@
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
 online version: https://go.anypackage.dev/Publish-Package
-schema: 2.0.0
 parent: AnyPackage
+schema: 2.0.0
 ---
 
 # Publish-Package
 
-## Synopsis
+## SYNOPSIS
 
 Publishes a package.
 
-## Syntax
+## SYNTAX
 
-```powershell
-Publish-Package [-Path] <String> [-Provider] <String> [-Source <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+Publish-Package [-Path] <String> [-Provider] <String> [-Source <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-## Description
+## DESCRIPTION
 
 Publishes a package.
 
-## Examples
+## EXAMPLES
 
 ### Example 1
 
@@ -32,7 +33,7 @@ PS C:\> Publish-Package -Path C:\module -Provider PowerShellGet -Source PSGaller
 
 This command publishes the module to `PSGallery` using the `PowerShellGet` provider.
 
-## Parameters
+## PARAMETERS
 
 ### -PassThru
 
@@ -62,7 +63,7 @@ Aliases:
 Required: True
 Position: 0
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -78,7 +79,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -94,7 +95,7 @@ Aliases: Repository
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -132,24 +133,23 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-## Inputs
+## INPUTS
 
 ### System.String
 
 You can a path to this cmdlet.
 
-## Outputs
+## OUTPUTS
 
 ### AnyPackage.Provider.PackageInfo
 
 By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter to a return objects that represent a package.
 
-## Notes
+## NOTES
 
-## Related Links
+## RELATED LINKS
 
 [Get-Package](Get-Package.md)
 

@@ -2,32 +2,31 @@
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
 online version: https://go.anypackage.dev/Get-PackageSource
-schema: 2.0.0
 parent: AnyPackage
+schema: 2.0.0
 ---
 
 # Get-PackageSource
 
-## Synopsis
+## SYNOPSIS
 
 Gets the package source.
 
-## Syntax
+## SYNTAX
 
-```powershell
-Get-PackageSource [[-Name] <String[]>] [-Provider <String> [<CommonParameters>]
+```
+Get-PackageSource [[-Name] <String[]>] [-Provider <String>] [<CommonParameters>]
 ```
 
-## Description
+## DESCRIPTION
 
 Gets the package source.
 
-## Examples
+## EXAMPLES
 
 ### Example 1
 
 ```powershell
-
 PS C:\> Get-PackageSource
 
 Name                           Location                                           Trusted
@@ -37,7 +36,7 @@ PSGallery                      https://www.powershellgallery.com/api/v2         
 
 This command gets all package repositories.
 
-## Parameters
+## PARAMETERS
 
 ### -Name
 
@@ -50,9 +49,9 @@ Aliases:
 
 Required: False
 Position: 0
-Default value: None
+Default value: *
 Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
+Accept wildcard characters: True
 ```
 
 ### -Provider
@@ -72,24 +71,23 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-## Inputs
+## INPUTS
 
 ### System.String
 
 You can pipe a package source to this cmdlet.
 
-## Outputs
+## OUTPUTS
 
 ### AnyPackage.Provider.PackageSourceInfo
 
 This cmdlet returns objects that represent a package source.
 
-## Notes
+## NOTES
 
-## Related Links
+## RELATED LINKS
 
 [Register-PackageSource](Register-PackageSource.md)
 

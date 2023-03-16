@@ -2,27 +2,28 @@
 external help file: AnyPackage.dll-Help.xml
 Module Name: AnyPackage
 online version: https://go.anypackage.dev/Register-PackageSource
-schema: 2.0.0
 parent: AnyPackage
+schema: 2.0.0
 ---
 
 # Register-PackageSource
 
-## Synopsis
+## SYNOPSIS
 
 Registers a package source.
 
-## Syntax
+## SYNTAX
 
-```powershell
-Register-PackageSource [-Name] <String> [-Location] <String> [-Provider] <String> [-Trusted] [-PassThru] [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+Register-PackageSource [-Name] <String> [-Location] <String> [-Provider] <String> [-Trusted] [-PassThru]
+ [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## Description
+## DESCRIPTION
 
 Registers a package source.
 
-## Examples
+## EXAMPLES
 
 ### Example 1
 
@@ -32,7 +33,7 @@ PS C:\> Register-PackageSource -Name Test -Location C:\TestRepo -Provider PowerS
 
 This command registers a package source named `Test` for the `PowerShellGet` provider.
 
-## Parameters
+## PARAMETERS
 
 ### -Force
 
@@ -166,24 +167,23 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-## Inputs
+## INPUTS
 
 ### System.String
 
 You can use the pipeline to send a string for the source name.
 
-## Outputs
+## OUTPUTS
 
 ### AnyPackage.Provider.PackageSourceInfo
 
 By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter to a return objects that represent a package source.
 
-## Notes
+## NOTES
 
-## Related Links
+## RELATED LINKS
 
 [Get-PackageSource](Get-PackageSource.md)
 
