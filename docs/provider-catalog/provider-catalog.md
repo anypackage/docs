@@ -20,6 +20,7 @@ Find-PSResource -Tag AnyPackage, Provider
 | Package Manager | Module                   | Project Page    |
 | --------------- | ------------------------ | --------------- |
 | Chocolatey      | AnyPackage.Chocolatey    | [AnyPackage/AnyPackage.Chocolatey](https://github.com/AnyPackage/AnyPackage.Chocolatey) |
+| Msu             | AnyPackage.Msu           | [AnyPackage/AnyPackage.Msu](https://github.com/AnyPackage/AnyPackage.Msu) |
 | PowerShellGet   | AnyPackage.PowerShellGet | [AnyPackage/AnyPackage.PowerShellGet](https://github.com/AnyPackage/AnyPackage.PowerShellGet) |
 | Programs        | AnyPackage.Programs      | [AnyPackage/AnyPackage.Programs](https://github.com/AnyPackage/AnyPackage.Programs) |
 | Scoop           | AnyPackage.Scoop         | [AnyPackage/AnyPackage.Scoop](https://github.com/AnyPackage/AnyPackage.Scoop) |
