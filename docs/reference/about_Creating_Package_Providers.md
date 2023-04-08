@@ -282,9 +282,7 @@ using module AnyPackage
 using namespace AnyPackage.Provider
 
 [PackageProvider('Test')]
-class TestProvider : PackageProvider {
-    TestProvider() : base() { }
-}
+class TestProvider : PackageProvider { }
 
 [guid] $id = 'e5491948-72b3-4f00-aa64-f93060d9b242'
 [PackageProviderManager]::RegisterProvider($id, [TestProvider], $MyInvocation.MyCommand.ScriptBlock.Module)
