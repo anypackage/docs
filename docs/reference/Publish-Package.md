@@ -14,7 +14,7 @@ Publishes a package.
 
 ## SYNTAX
 
-```none
+```
 Publish-Package [-Path] <String> [-Provider] <String> [-Source <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```

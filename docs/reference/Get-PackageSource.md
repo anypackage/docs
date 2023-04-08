@@ -14,7 +14,7 @@ Gets the package source.
 
 ## SYNTAX
 
-```none
+```
 Get-PackageSource [[-Name] <String[]>] [-Provider <String>]
  [<CommonParameters>]
 ```

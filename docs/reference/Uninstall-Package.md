@@ -16,14 +16,14 @@ Uninstalls a package.
 
 ### Name (Default)
 
-```none
+```
 Uninstall-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### InputObject
 
-```none
+```
 Uninstall-Package [-InputObject] <PackageInfo[]> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```

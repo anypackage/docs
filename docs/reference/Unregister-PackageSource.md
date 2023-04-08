@@ -14,7 +14,7 @@ Unregister a package source.
 
 ## SYNTAX
 
-```none
+```
 Unregister-PackageSource [-Name] <String[]> [-Provider <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```

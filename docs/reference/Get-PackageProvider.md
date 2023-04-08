@@ -14,7 +14,7 @@ Gets imported package providers.
 
 ## SYNTAX
 
-```none
+```
 Get-PackageProvider [[-Name] <String[]>] [-ListAvailable]
  [<CommonParameters>]
 ```
