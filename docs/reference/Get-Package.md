@@ -14,7 +14,7 @@ Gets installed packages.
 
 ## SYNTAX
 
-```none
+```
 Get-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Provider <String>]
  [<CommonParameters>]
 ```

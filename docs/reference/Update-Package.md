@@ -16,7 +16,7 @@ Updates a package.
 
 ### Name (Default)
 
-```none
+```
 Update-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Source <String>] [-Prerelease]
  [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -24,28 +24,28 @@ Update-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Source 
 
 ### InputObject
 
-```none
+```
 Update-Package [-InputObject] <PackageInfo[]> [-PassThru] [-TrustSource]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Path
 
-```none
+```
 Update-Package -Path <String[]> [-PassThru] [-Provider <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### LiteralPath
 
-```none
+```
 Update-Package -LiteralPath <String[]> [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Uri
 
-```none
+```
 Update-Package -Uri <Uri[]> [-PassThru] [-Provider <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```

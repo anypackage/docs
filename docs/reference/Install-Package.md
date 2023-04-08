@@ -16,7 +16,7 @@ Installs the package.
 
 ### Name (Default)
 
-```none
+```
 Install-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <String>] [-Prerelease]
  [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -24,28 +24,28 @@ Install-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <
 
 ### InputObject
 
-```none
+```
 Install-Package <PackageInfo[]> [-PassThru] [-TrustSource] [-InputObject]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Path
 
-```none
+```
 Install-Package -Path <String[]> [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### LiteralPath
 
-```none
+```
 Install-Package -LiteralPath <String[]> [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Uri
 
-```none
+```
 Install-Package -Uri <Uri[]> [-PassThru] [-Provider <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```

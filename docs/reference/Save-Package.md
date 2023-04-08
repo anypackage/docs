@@ -16,7 +16,7 @@ Saves a package to the file system.
 
 ### Name (Default)
 
-```none
+```
 Save-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <String>] [-Path <String>]
  [-Prerelease] [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -24,7 +24,7 @@ Save-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <Str
 
 ### InputObject
 
-```none
+```
 Save-Package [-InputObject] <PackageInfo[]> [-Path <String>] [-PassThru] [-TrustSource]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```

@@ -16,27 +16,27 @@ Finds packages in package sources.
 
 ### Name
 
-```none
+```
 Find-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Source <String>] [-Prerelease]
  [-Provider <String>] [<CommonParameters>]
 ```
 
 ### Path
 
-```none
+```
 Find-Package -Path <String[]> [-Provider <String>] [<CommonParameters>]
 ```
 
 ### LiteralPath
 
-```none
+```
 Find-Package -LiteralPath <String[]> [-Provider <String>]
  [<CommonParameters>]
 ```
 
 ### Uri
 
-```none
+```
 Find-Package -Uri <Uri[]> [-Provider <String>] [<CommonParameters>]
 ```
 

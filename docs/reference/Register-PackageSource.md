@@ -14,7 +14,7 @@ Registers a package source.
 
 ## SYNTAX
 
-```none
+```
 Register-PackageSource [-Name] <String> [-Location] <String> [-Provider] <String> [-Trusted] [-PassThru]
  [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
