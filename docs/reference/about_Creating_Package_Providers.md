@@ -28,20 +28,34 @@ Additional configuration may be added in the future to define optional features.
 [PackageProvider("ProviderName")]
 ```
 
+### PackageByName
+
+The `PackageByName` optional property can be set to `$false` in order for the provider to indicate that finding/installing/updating packages by package name is not supported.
+This is useful to set if the provider only supports either by `Path` or `Uri`.
+The default value is `$true`.
+
+### FileExtensions
+
+The `FileExtensions` optional property is used to indicate which file types are supported by the package provider when finding/installing/updating packages.
+To use the value a string array is used including the proceeding dot.
+For example in PowerShell it would be defined like:
+
+`[PackageProvider('Msi', FileExtensions = ('.msi', '.msp')]`
+
+### UriSchemes
+
+The `UriSchemes` optional property is used to indicate which Uri schemes are supported by the package provider when finding/installing/updating packages.
+For example in PowerShell it would be defined like:
+
+`[PackageProvider('MyProvider', UriSchemes = ('http', 'https')]`
+
 ## PackageProvider Class
 
 The `PackageProvider` base class serves as the foundation for all package providers.
 
-### Constructing
+### Constructor
 
-The package provider must have a public parameter-less constructor that calls the base constructor with the package provider's unique identifier `[Guid]`.
-
-```powershell
-[PackageProvider('Test')]
-class TestProvider : PackageProvider {
-    TestProvider() : base('e5491948-72b3-4f00-aa64-f93060d9b242') { }
-}
-```
+The package provider must have a public parameter-less constructor for `AnyPackage` to call.
 
 ### Initializing
 
@@ -75,6 +89,20 @@ class TestProvider : PackageProvider {
     [void] Clean() {
         # Clean-up logic 
     }
+}
+```
+
+## Supported Sources
+
+If the package provider supports finding/updating/installing/saving packages with a source override the `IsSource([string] $source)` method.
+The default implementation is to always return `$true`.
+
+In this example, the method defines `production` and `testing` as supported sources.
+When an `AnyPackage` cmdlet is called it will call the `IsSource` method and validate the provider supports the source.
+
+```powershell
+[bool] IsSource([string] $source) {
+    return $source -in 'production', 'testing'
 }
 ```
 
@@ -173,26 +201,24 @@ The `[PackageRequest]` type contains information about the request and methods t
 ```powershell
 class PackageRequest {
     [string] $Name
-    [VersionRange] $Version
+    [PackageVersionRange] $Version
     [string] $Source
     [bool] $Prerelease
     [PackageInfo] $Package
     [string] $Path
+    [Uri] $Uri
     [object] $DynamicParameters
+    [PackageProviderInfo] $ProviderInfo
 
     [bool] $Stopping
 
     [bool] IsMatch([string] $name)
-    [bool] IsMatch([NuGetVersion] $version)
-    [bool] IsMatch([string] $name, [NuGetVersion] $version)
+    [bool] IsMatch([PackageVersion] $version)
+    [bool] IsMatch([string] $name, [PackageVersion] $version)
 
     [bool] PromptUntrustedSource([string] $source)
 
     [void] WritePackage([PackageInfo] $package)
-    [void] WritePackage([IEnumerable[PackageInfo]] $package)
-    [void] WritePackage([string] $name, [NuGetVersion] $version, [string] $description, [PackageSourceInfo] $source, [hashtable] $metadata, [IEnumerable[PackageDependency]] $dependencies)
-
-    [PackageSourceInfo] NewSourceInfo([string] $name, [string] $location, [bool] $trusted, [hashtable] $metadata)
 ```
 
 ### Source Request
@@ -206,37 +232,42 @@ class SourceRequest {
     [bool] $Trusted
     [bool] $Force
     [object] $DynamicParameters
+    [PackageProviderInfo] $ProviderInfo
 
     [bool] $Stopping
 
     [void] WriteSource([PackageSourceInfo] $source)
-    [void] WriteSource([IEnumerable[PackageSourceInfo]] $source)
-    [void] WriteSource([string] $name, [string] $location, [bool] $trusted, [hashtable] $metadata)
 ```
 
 ## Register a Package Provider
 
 To register a package provider with `AnyPackage` the following method must be called from within your module.
-In this example the `[TestProvider]` is the type that implements the package provider.
+In this example the `[TestProvider]` is the type that implements the package provider and `e5491948-72b3-4f00-aa64-f93060d9b242` is
+the provider's unique ID..
 
 ```powershell
-[PackageProviderManager]::RegisterProvider([TestProvider], $MyInvocation.MyCommand.ScriptBlock.Module)
+[guid] $id = 'e5491948-72b3-4f00-aa64-f93060d9b242'
+[PackageProviderManager]::RegisterProvider($id, [TestProvider], $MyInvocation.MyCommand.ScriptBlock.Module)
 ```
 
 If you are unable to pass the `PSModuleInfo` then the module name can be passed instead.
 
 ```powershell
-[PackageProviderManager]::RegisterProvider([TestProvider], 'TestModule')
+[guid] $id = 'e5491948-72b3-4f00-aa64-f93060d9b242'
+[PackageProviderManager]::RegisterProvider($id, [TestProvider], 'TestModule')
 ```
 
 ## Unregister a Package Provider
 
-To remove a package provider on when the provider module is removed add this command.
-In this example the `[TestProvider]` is the type that implements the package provider.
+To remove a package provider on when the provider module is removed set the `OnRemove`
+property for the module calling the `[PackageProviderManager]::UnregisterProvider([Guid] $id)` method.
+
+In the example the following example, the `e5491948-72b3-4f00-aa64-f93060d9b242` is
+the provider's unique ID.
 
 ```powershell
 $MyInvocation.MyCommand.ScriptBlock.Module.OnRemove = { 
-    [PackageProviderManager]::UnregisterProvider([TestProvider])
+    [PackageProviderManager]::UnregisterProvider('e5491948-72b3-4f00-aa64-f93060d9b242')
 }
 ```
 
@@ -252,13 +283,14 @@ using namespace AnyPackage.Provider
 
 [PackageProvider('Test')]
 class TestProvider : PackageProvider {
-    TestProvider() : base('e5491948-72b3-4f00-aa64-f93060d9b242') { }
+    TestProvider() : base() { }
 }
 
-[PackageProviderManager]::RegisterProvider([TestProvider], $MyInvocation.MyCommand.ScriptBlock.Module)
+[guid] $id = 'e5491948-72b3-4f00-aa64-f93060d9b242'
+[PackageProviderManager]::RegisterProvider($id, [TestProvider], $MyInvocation.MyCommand.ScriptBlock.Module)
 
 $MyInvocation.MyCommand.ScriptBlock.Module.OnRemove = { 
-    [PackageProviderManager]::UnregisterProvider([TestProvider])
+    [PackageProviderManager]::UnregisterProvider($id)
 }
 ```
 

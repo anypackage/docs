@@ -15,14 +15,17 @@ Saves a package to the file system.
 ## SYNTAX
 
 ### Name (Default)
-```
+
+```none
 Save-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <String>] [-Path <String>]
- [-Prerelease] [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Prerelease] [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### InputObject
-```
-Save-Package [-Path <String>] [-PassThru] [-TrustSource] [-Provider <String>] [-InputObject] <PackageInfo[]>
+
+```none
+Save-Package [-InputObject] <PackageInfo[]> [-Path <String>] [-PassThru] [-TrustSource]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -130,7 +133,7 @@ Specifies the package provider.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Name
 Aliases:
 
 Required: False
@@ -226,6 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

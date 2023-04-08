@@ -14,9 +14,9 @@ Publishes a package.
 
 ## SYNTAX
 
-```
-Publish-Package [-Path] <String> [-Provider] <String> [-Source <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+```none
+Publish-Package [-Path] <String> [-Provider] <String> [-Source <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -133,6 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

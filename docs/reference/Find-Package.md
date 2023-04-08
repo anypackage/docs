@@ -14,9 +14,30 @@ Finds packages in package sources.
 
 ## SYNTAX
 
-```
+### Name
+
+```none
 Find-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Source <String>] [-Prerelease]
  [-Provider <String>] [<CommonParameters>]
+```
+
+### Path
+
+```none
+Find-Package -Path <String[]> [-Provider <String>] [<CommonParameters>]
+```
+
+### LiteralPath
+
+```none
+Find-Package -LiteralPath <String[]> [-Provider <String>]
+ [<CommonParameters>]
+```
+
+### Uri
+
+```none
+Find-Package -Uri <Uri[]> [-Provider <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +80,7 @@ Specifies one or more package name.
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: Name
 Aliases:
 
 Required: False
@@ -75,7 +96,7 @@ Specifies if prerelease packages should be returned.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: Name
 Aliases:
 
 Required: False
@@ -107,7 +128,7 @@ Specifies the package source.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Name
 Aliases: Repository
 
 Required: False
@@ -127,7 +148,7 @@ For more information refer to [NuGet version range syntax](https://learn.microso
 
 ```yaml
 Type: PackageVersionRange
-Parameter Sets: (All)
+Parameter Sets: Name
 Aliases:
 
 Required: False
@@ -137,7 +158,61 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -LiteralPath
+
+Specifies a path to one or more locations.
+The value of LiteralPath is used exactly as it's typed.
+No characters are interpreted as wildcards.
+If the path includes escape characters, enclose it in single quotation marks.
+Single quotation marks tell PowerShell to not interpret any characters as escape sequences.
+
+```yaml
+Type: String[]
+Parameter Sets: LiteralPath
+Aliases: PSPath
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Path
+
+Specifies a path to one or more locations.
+Wildcards are accepted.
+
+```yaml
+Type: String[]
+Parameter Sets: Path
+Aliases: FilePath
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: True
+```
+
+### -Uri
+
+Specifies a Uri.
+
+```yaml
+Type: Uri[]
+Parameter Sets: Uri
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

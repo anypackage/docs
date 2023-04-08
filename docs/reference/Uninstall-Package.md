@@ -15,15 +15,17 @@ Uninstalls a package.
 ## SYNTAX
 
 ### Name (Default)
-```
+
+```none
 Uninstall-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### InputObject
-```
-Uninstall-Package [-PassThru] [-Provider <String>] [-InputObject] <PackageInfo[]> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+
+```none
+Uninstall-Package [-InputObject] <PackageInfo[]> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -98,7 +100,7 @@ Specifies the package provider.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Name
 Aliases:
 
 Required: False
@@ -162,6 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

@@ -14,8 +14,9 @@ Gets imported package providers.
 
 ## SYNTAX
 
-```
-Get-PackageProvider [[-Name] <String[]>] [-ListAvailable] [<CommonParameters>]
+```none
+Get-PackageProvider [[-Name] <String[]>] [-ListAvailable]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -72,6 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
