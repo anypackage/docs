@@ -14,9 +14,9 @@ Sets package source configuration.
 
 ## SYNTAX
 
-```
-Set-PackageSource [-Name] <String> [-Location <String>] [-Provider <String>] [-Trusted] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+```none
+Set-PackageSource [-Name] <String> [-Location <String>] [-Provider <String>] [-Trusted] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -150,6 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

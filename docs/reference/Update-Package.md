@@ -15,14 +15,38 @@ Updates a package.
 ## SYNTAX
 
 ### Name (Default)
-```
+
+```none
 Update-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Source <String>] [-Prerelease]
- [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### InputObject
+
+```none
+Update-Package [-InputObject] <PackageInfo[]> [-PassThru] [-TrustSource]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
-Update-Package [-PassThru] [-TrustSource] [-Provider <String>] [-InputObject] <PackageInfo[]> [-WhatIf]
+
+### Path
+
+```none
+Update-Package -Path <String[]> [-PassThru] [-Provider <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### LiteralPath
+
+```none
+Update-Package -LiteralPath <String[]> [-PassThru] [-Provider <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Uri
+
+```none
+Update-Package -Uri <Uri[]> [-PassThru] [-Provider <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -114,7 +138,7 @@ Specifies the package provider.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Name, Path, LiteralPath, Uri
 Aliases:
 
 Required: False
@@ -146,7 +170,7 @@ If an untrusted source should be trusted for this execution suppressing prompts.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: Name, InputObject
 Aliases: TrustRepository
 
 Required: False
@@ -209,7 +233,61 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -LiteralPath
+
+Specifies a path to one or more locations.
+The value of LiteralPath is used exactly as it's typed.
+No characters are interpreted as wildcards.
+If the path includes escape characters, enclose it in single quotation marks.
+Single quotation marks tell PowerShell to not interpret any characters as escape sequences.
+
+```yaml
+Type: String[]
+Parameter Sets: LiteralPath
+Aliases: PSPath
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Path
+
+Specifies a path to one or more locations.
+Wildcards are accepted.
+
+```yaml
+Type: String[]
+Parameter Sets: Path
+Aliases: FilePath
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: True
+```
+
+### -Uri
+
+Specifies a Uri.
+
+```yaml
+Type: Uri[]
+Parameter Sets: Uri
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
