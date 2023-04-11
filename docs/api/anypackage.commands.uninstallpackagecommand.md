@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # UninstallPackageCommand
 
 Namespace: AnyPackage.Commands

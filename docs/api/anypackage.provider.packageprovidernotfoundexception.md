@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # PackageProviderNotFoundException
 
 Namespace: AnyPackage.Provider

@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # IUpdatePackage
 
 Namespace: AnyPackage.Provider

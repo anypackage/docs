@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # PackageVersionRange
 
 Namespace: AnyPackage.Provider

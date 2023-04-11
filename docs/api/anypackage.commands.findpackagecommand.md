@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # FindPackageCommand
 
 Namespace: AnyPackage.Commands

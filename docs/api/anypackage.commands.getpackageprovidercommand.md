@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # GetPackageProviderCommand
 
 Namespace: AnyPackage.Commands

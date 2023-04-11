@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # IInstallPackage
 
 Namespace: AnyPackage.Provider

@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # InstallPackageCommand
 
 Namespace: AnyPackage.Commands

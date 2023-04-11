@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # UpdatePackageCommand
 
 Namespace: AnyPackage.Commands

@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # ValidatePathIsDirectoryAttribute
 
 Namespace: AnyPackage.Commands

@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # UnregisterPackageSourceCommand
 
 Namespace: AnyPackage.Commands

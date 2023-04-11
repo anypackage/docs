@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # ValidateProviderAttribute
 
 Namespace: AnyPackage.Commands

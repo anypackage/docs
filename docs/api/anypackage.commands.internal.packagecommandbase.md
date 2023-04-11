@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # PackageCommandBase
 
 Namespace: AnyPackage.Commands.Internal

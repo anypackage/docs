@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # PackageInfo
 
 Namespace: AnyPackage.Provider
