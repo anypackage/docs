@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # IGetSource
 
 Namespace: AnyPackage.Provider

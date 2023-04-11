@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # ProviderArgumentCompleter
 
 Namespace: AnyPackage.Commands

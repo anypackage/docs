@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # IPublishPackage
 
 Namespace: AnyPackage.Provider

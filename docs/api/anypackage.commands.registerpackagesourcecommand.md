@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # RegisterPackageSourceCommand
 
 Namespace: AnyPackage.Commands

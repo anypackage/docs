@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # PackageVersionScheme
 
 Namespace: AnyPackage.Provider

@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # ValidateNoWildcardsAttribute
 
 Namespace: AnyPackage.Commands

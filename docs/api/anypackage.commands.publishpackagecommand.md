@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # PublishPackageCommand
 
 Namespace: AnyPackage.Commands

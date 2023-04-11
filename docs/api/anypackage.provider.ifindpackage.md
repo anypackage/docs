@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # IFindPackage
 
 Namespace: AnyPackage.Provider

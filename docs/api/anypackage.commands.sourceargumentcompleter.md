@@ -1,3 +1,7 @@
+---
+parent: API
+---
+
 # SourceArgumentCompleter
 
 Namespace: AnyPackage.Commands
