@@ -4,9 +4,9 @@ has_children: true
 nav_order: 4
 ---
 
-## Desired State Configuration
+# Desired State Configuration
 
-### Installing AnyPackageDsc
+## Installing AnyPackageDsc
 
 To install AnyPackage use the built-in PowerShell package manager PowerShellGet.
 
@@ -19,3 +19,13 @@ Install-Module AnyPackageDsc
 # PowerShellGet v3
 Install-PSResource AnyPackageDsc
 ```
+
+## Resources
+
+### [Package](Package.md)
+
+Configures a package.
+
+### [Source](Source.md)
+
+Configures a package source.
