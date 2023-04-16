@@ -20,7 +20,7 @@ Source [String] #ResourceName
 }
 ```
 
-## Parameters
+## Properties
 
 ### AdditionalParameters
 
