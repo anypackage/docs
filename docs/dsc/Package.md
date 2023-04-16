@@ -22,7 +22,7 @@ Package [String] #ResourceName
 }
 ```
 
-## Parameters
+## Properties
 
 ### AdditionalParameters
 
