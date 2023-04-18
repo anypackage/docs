@@ -2,7 +2,7 @@
 Module Name: AnyPackage
 Module Guid: 19cd4cdd-6766-4e47-be1c-76c33cea7392
 Download Help Link: https://go.anypackage.dev/help
-Help Version: 0.4.1.0
+Help Version: 0.5.1.0
 Locale: en-US
 title: AnyPackage
 has_children: true
