@@ -14,7 +14,7 @@ Gets installed packages.
 
 ## SYNTAX
 
-```
+```powershell
 Get-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Provider <String>]
  [<CommonParameters>]
 ```
@@ -28,7 +28,7 @@ Gets installed packages.
 ### Example 1: Gets all packages
 
 ```powershell
-PS C:\> Get-Package
+Get-Package
 
 Name                                     Version         Source               Provider
 ----                                     -------         ----------           --------
@@ -41,7 +41,7 @@ The command gets packages from registered package providers.
 ### Example 2: Gets all package from a provider
 
 ```powershell
-PS C:\> Get-Package -Provider PowerShellGet
+Get-Package -Provider PowerShellGet
 
 Name                                     Version         Source               Provider
 ----                                     -------         ----------           --------

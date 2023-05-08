@@ -14,7 +14,7 @@ Gets imported package providers.
 
 ## SYNTAX
 
-```
+```powershell
 Get-PackageProvider [[-Name] <String[]>] [-ListAvailable]
  [<CommonParameters>]
 ```
@@ -28,7 +28,7 @@ Gets imported package providers.
 ### Example 1
 
 ```powershell
-PS C:\> Get-PackageProvider
+Get-PackageProvider
 
 Name                 Priority Operations
 ----                 -------- ----------

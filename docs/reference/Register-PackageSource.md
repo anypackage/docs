@@ -14,7 +14,7 @@ Registers a package source.
 
 ## SYNTAX
 
-```
+```powershell
 Register-PackageSource [-Name] <String> [-Location] <String> [-Provider] <String> [-Trusted] [-PassThru]
  [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,7 +28,7 @@ Registers a package source.
 ### Example 1
 
 ```powershell
-PS C:\> Register-PackageSource -Name Test -Location C:\TestRepo -Provider PowerShellGet
+Register-PackageSource -Name Test -Location C:\TestRepo -Provider PowerShellGet
 ```
 
 This command registers a package source named `Test` for the `PowerShellGet` provider.

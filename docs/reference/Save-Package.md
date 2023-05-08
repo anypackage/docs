@@ -16,7 +16,7 @@ Saves a package to the file system.
 
 ### Name (Default)
 
-```
+```powershell
 Save-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <String>] [-Path <String>]
  [-Prerelease] [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -24,7 +24,7 @@ Save-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <Str
 
 ### InputObject
 
-```
+```powershell
 Save-Package [-InputObject] <PackageInfo[]> [-Path <String>] [-PassThru] [-TrustSource]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -38,7 +38,7 @@ Saves a package to the file system.
 ### Example 1
 
 ```powershell
-PS C:\> Save-Package -Name PowerShellGet -Path C:\Temp
+Save-Package -Name PowerShellGet -Path C:\Temp
 ```
 
 This command saves the PowerShellGet module to C:\Temp.

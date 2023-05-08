@@ -16,14 +16,14 @@ Uninstalls a package.
 
 ### Name (Default)
 
-```
+```powershell
 Uninstall-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### InputObject
 
-```
+```powershell
 Uninstall-Package [-InputObject] <PackageInfo[]> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -37,7 +37,7 @@ Uninstalls a package.
 ### Example 1
 
 ```powershell
-PS C:\> Uninstall-Package -Name PackageManagement
+Uninstall-Package -Name PackageManagement
 ```
 
 This command uninstalls the `PackageManagement` package.

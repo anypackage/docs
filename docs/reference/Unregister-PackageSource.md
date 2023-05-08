@@ -14,7 +14,7 @@ Unregister a package source.
 
 ## SYNTAX
 
-```
+```powershell
 Unregister-PackageSource [-Name] <String[]> [-Provider <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,7 +28,7 @@ Unregister a package source.
 ### Example 1
 
 ```powershell
-PS C:\> Unregister-PackageSource -Name PSGallery
+Unregister-PackageSource -Name PSGallery
 ```
 
 This command removes the `PSGallery` as a package source.

@@ -16,7 +16,7 @@ Installs the package.
 
 ### Name (Default)
 
-```
+```powershell
 Install-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <String>] [-Prerelease]
  [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -24,28 +24,28 @@ Install-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <
 
 ### InputObject
 
-```
+```powershell
 Install-Package <PackageInfo[]> [-PassThru] [-TrustSource] [-InputObject]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Path
 
-```
+```powershell
 Install-Package -Path <String[]> [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### LiteralPath
 
-```
+```powershell
 Install-Package -LiteralPath <String[]> [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Uri
 
-```
+```powershell
 Install-Package -Uri <Uri[]> [-PassThru] [-Provider <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -59,7 +59,7 @@ Installs the package.
 ### Example 1
 
 ```powershell
-PS C:\> Install-Package -Name PowerShellGet
+Install-Package -Name PowerShellGet
 ```
 
 This command installs the PowerShellGet package.

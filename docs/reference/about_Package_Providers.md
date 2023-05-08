@@ -51,7 +51,7 @@ Take note of how `Tag` is not present.
 Type `Find-Package -` followed by CTRL+SPACE to bring up menu complete.
 
 ```powershell
-PS C:\> Find-Package -
+Find-Package -
 Name                 Provider             WarningAction        InformationVariable
 Version              Verbose              InformationAction    OutVariable
 Source               Debug                ErrorVariable        OutBuffer
@@ -62,7 +62,7 @@ Now we will add `-Provider PowerShellGet` to add the provider parameters.
 Take note of how `Tag` is now available to use and the tooltip at the bottom gives the parameter type.
 
 ```powershell
-PS C:\> Find-Package -Provider PowerShellGet -Tag
+Find-Package -Provider PowerShellGet -Tag
 Name                 Tag                  ErrorAction          WarningVariable      PipelineVariable
 Version              Type                 WarningAction        InformationVariable
 Source               Verbose              InformationAction    OutVariable
@@ -92,7 +92,7 @@ The provider `FullName` is the module and provider name in this format: `Module\
 To view a provider's priority use the `Get-PackageProvider` command.
 
 ```powershell
-PS C:\> Get-PackageProvider
+Get-PackageProvider
 
 Name                 Priority Operations
 ----                 -------- ----------
@@ -104,9 +104,9 @@ To change a provider's priority first get the provider with `Get-PackageProvider
 Then set the `Priority` property with the new priority.
 
 ```powershell
-PS C:\> $provider = Get-PackageProvider -Name PowerShellGet
-PS C:\> $provider.Priority = 50
-PS C:\> Get-PackageProvider -Name PowerShellGet
+$provider = Get-PackageProvider -Name PowerShellGet
+$provider.Priority = 50
+Get-PackageProvider -Name PowerShellGet
 
 Name                 Priority Operations
 ----                 -------- ----------
