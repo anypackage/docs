@@ -286,6 +286,20 @@ $MyInvocation.MyCommand.ScriptBlock.Module.OnRemove = {
 }
 ```
 
+## Packages without a Version
+
+If your package provider supports packages without a version special consideration needs to take place.
+The user may specify all versions to be returned and in that case packages with a `null` version should also be returned.
+
+In this example the `$request.IsMatch($name)` method is used to filter package names.
+Then an additional check is used if the `$request.Version` is `null` or is a `*` all version wildcard.
+
+```powershell
+if ($request.IsMatch($name) -and ($null -eq $request.Version -or $request.Version -eq '*') {
+    # Write package
+}
+```
+
 ## Examples
 
 ### Basic Provider
