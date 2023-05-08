@@ -14,7 +14,7 @@ Sets package source configuration.
 
 ## SYNTAX
 
-```powershell
+```
 Set-PackageSource [-Name] <String> [-Location <String>] [-Provider <String>] [-Trusted] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
