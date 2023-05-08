@@ -14,7 +14,7 @@ Publishes a package.
 
 ## SYNTAX
 
-```powershell
+```
 Publish-Package [-Path] <String> [-Provider] <String> [-Source <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```

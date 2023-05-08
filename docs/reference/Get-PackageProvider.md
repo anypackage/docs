@@ -14,7 +14,7 @@ Gets imported package providers.
 
 ## SYNTAX
 
-```powershell
+```
 Get-PackageProvider [[-Name] <String[]>] [-ListAvailable]
  [<CommonParameters>]
 ```

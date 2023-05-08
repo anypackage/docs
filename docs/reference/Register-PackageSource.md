@@ -14,7 +14,7 @@ Registers a package source.
 
 ## SYNTAX
 
-```powershell
+```
 Register-PackageSource [-Name] <String> [-Location] <String> [-Provider] <String> [-Trusted] [-PassThru]
  [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```

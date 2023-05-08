@@ -14,7 +14,7 @@ Gets installed packages.
 
 ## SYNTAX
 
-```powershell
+```
 Get-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Provider <String>]
  [<CommonParameters>]
 ```
