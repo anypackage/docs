@@ -86,6 +86,17 @@ Type: string
 Default value: None
 ```
 
+### Reasons
+
+Returns reasons why the resource is not in compliance.
+The `Code` property is the unique identifier and `Phrase` property is the human readable reason.
+
+```yaml
+Attribute: Read
+Type: string
+Default value: N/A
+```
+
 ### Source
 
 Specifies the package source.
