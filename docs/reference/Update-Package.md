@@ -16,7 +16,7 @@ Updates a package.
 
 ### Name (Default)
 
-```
+```powershell
 Update-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Source <String>] [-Prerelease]
  [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -24,28 +24,28 @@ Update-Package [[-Name] <String[]>] [[-Version] <PackageVersionRange>] [-Source 
 
 ### InputObject
 
-```
+```powershell
 Update-Package [-InputObject] <PackageInfo[]> [-PassThru] [-TrustSource]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Path
 
-```
+```powershell
 Update-Package -Path <String[]> [-PassThru] [-Provider <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### LiteralPath
 
-```
+```powershell
 Update-Package -LiteralPath <String[]> [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Uri
 
-```
+```powershell
 Update-Package -Uri <Uri[]> [-PassThru] [-Provider <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -59,7 +59,7 @@ Updates a package.
 ### Example 1
 
 ```powershell
-PS C:\> Update-Package -Name PowerShellGet
+Update-Package -Name PowerShellGet
 ```
 
 This command updates `PowerShellGet` package.

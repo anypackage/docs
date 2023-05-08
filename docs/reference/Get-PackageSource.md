@@ -14,7 +14,7 @@ Gets the package source.
 
 ## SYNTAX
 
-```
+```powershell
 Get-PackageSource [[-Name] <String[]>] [-Provider <String>]
  [<CommonParameters>]
 ```
@@ -28,7 +28,7 @@ Gets the package source.
 ### Example 1
 
 ```powershell
-PS C:\> Get-PackageSource
+Get-PackageSource
 
 Name                           Location                                           Trusted
 ----                           --------                                           -------

@@ -14,7 +14,7 @@ Publishes a package.
 
 ## SYNTAX
 
-```
+```powershell
 Publish-Package [-Path] <String> [-Provider] <String> [-Source <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,7 +28,7 @@ Publishes a package.
 ### Example 1
 
 ```powershell
-PS C:\> Publish-Package -Path C:\module -Provider PowerShellGet -Source PSGallery
+Publish-Package -Path C:\module -Provider PowerShellGet -Source PSGallery
 ```
 
 This command publishes the module to `PSGallery` using the `PowerShellGet` provider.

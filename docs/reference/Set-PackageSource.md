@@ -14,7 +14,7 @@ Sets package source configuration.
 
 ## SYNTAX
 
-```
+```powershell
 Set-PackageSource [-Name] <String> [-Location <String>] [-Provider <String>] [-Trusted] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,7 +28,7 @@ Sets package source configuration.
 ### Example 1
 
 ```powershell
-PS C:\> Set-PackageSource -Name PSGallery -Trusted
+Set-PackageSource -Name PSGallery -Trusted
 ```
 
 This command sets the `PSGallery` package source to trusted.
