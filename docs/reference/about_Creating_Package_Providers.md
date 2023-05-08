@@ -19,6 +19,21 @@ A package provider is the way for module authors to extend the `AnyPackage` modu
 Providers can be created in PowerShell or C#.
 Package providers are implemented by defining a class that inherits from `PackageProvider` class and has the `PackageProvider` attribute.
 
+## Supporting List Available
+
+In order to support `Get-PackageProvider -ListAvailable` the module needs to define shipped providers.
+In the module manifest have the following key:
+
+```powershell
+@{
+    PrivateData = @{
+        AnyPackage = @{
+            Providers = @('ProviderName')
+        }
+    }
+}
+```
+
 ## PackageProvider Attribute
 
 The `PackageProvider` attribute defines the package provider name.
