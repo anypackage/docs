@@ -19,9 +19,9 @@ Find-PSResource -Tag AnyPackage, Provider
 
 | Package Manager | Module                   | Project Page    |
 | --------------- | ------------------------ | --------------- |
-| Chocolatey      | AnyPackage.Chocolatey    | [AnyPackage/AnyPackage.Chocolatey](https://github.com/AnyPackage/AnyPackage.Chocolatey) |
-| Msu             | AnyPackage.Msu           | [AnyPackage/AnyPackage.Msu](https://github.com/AnyPackage/AnyPackage.Msu) |
-| PowerShellGet   | AnyPackage.PowerShellGet | [AnyPackage/AnyPackage.PowerShellGet](https://github.com/AnyPackage/AnyPackage.PowerShellGet) |
-| Programs        | AnyPackage.Programs      | [AnyPackage/AnyPackage.Programs](https://github.com/AnyPackage/AnyPackage.Programs) |
-| Scoop           | AnyPackage.Scoop         | [AnyPackage/AnyPackage.Scoop](https://github.com/AnyPackage/AnyPackage.Scoop) |
-| WinGet          | AnyPackage.WinGet        | [AnyPackage/AnyPackage.WinGet](https://github.com/AnyPackage/AnyPackage.WinGet) |
+| Chocolatey      | AnyPackage.Chocolatey    | [anypackage/chocolatey](https://github.com/anypackage/chocolatey) |
+| Msu             | AnyPackage.Msu           | [anypackage/msu](https://github.com/anypackage/msu) |
+| PowerShellGet   | AnyPackage.PowerShellGet | [anypackage/powershellget](https://github.com/anypackage/powershellget) |
+| Programs        | AnyPackage.Programs      | [anypackage/programs](https://github.com/anypackage/programs) |
+| Scoop           | AnyPackage.Scoop         | [anypackage/scoop](https://github.com/anypackage/scoop) |
+| WinGet          | AnyPackage.WinGet        | [anypackage/winget](https://github.com/anypackage/winget) |
