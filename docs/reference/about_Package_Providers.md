@@ -78,7 +78,6 @@ The commands that use the priority system are:
 
 * Install-Package
 * Save-Package
-* Update-Package
 * Uninstall-Package
 
 For example, lets say a user tries to install a package `Microsoft.PowerShell.Security`. This package exists in the `PowerShellGet` and `NuGet` provider.
