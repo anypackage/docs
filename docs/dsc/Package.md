@@ -78,7 +78,7 @@ Default value: False
 
 Specifies the package provider full name.
 The provider full name is in the following format: ModuleName\ProviderName.
-For AnyPackage PowerShellGet provider it would be: AnyPackage.PowerShellGet\PowerShellGet.
+For AnyPackage PSResourceGet provider it would be: AnyPackage.PSResourceGet\PSResourceGet.
 
 ```yaml
 Attribute: Key
