@@ -9,15 +9,15 @@ has_toc: false
 
 ## Installing AnyPackageDsc
 
-To install AnyPackage use the built-in PowerShell package manager PowerShellGet.
+To install AnyPackage use the built-in PowerShell package manager.
 
 Launch PowerShell and run the following command.
 
 ```powershell
-# PowerShellGet v2
+# PowerShellGet
 Install-Module AnyPackageDsc
 
-# PowerShellGet v3
+# PSResourceGet
 Install-PSResource AnyPackageDsc
 ```
 

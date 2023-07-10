@@ -12,6 +12,10 @@ A provider may not be listed here.
 To find the latest providers please use the following command.
 
 ```powershell
+# PowerShellGet
+Find-Module -Tag AnyPackage, Provider
+
+# PSResourceGet
 Find-PSResource -Tag AnyPackage, Provider
 ```
 
