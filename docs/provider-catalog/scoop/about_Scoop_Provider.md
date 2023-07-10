@@ -80,7 +80,7 @@ Remove all persistent data.
 
 * Uninstall-Package
 
-### Scope \<Microsoft.PowerShell.PowerShellGet.UtilClasses.ScopeType\>
+### Scope \<System.String\>
 
 Specifies the scope of the package.
 Scope types supported are:
