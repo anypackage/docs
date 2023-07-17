@@ -18,6 +18,7 @@ The Windows programs package provider for `AnyPackage` module lets you get Windo
 The Programs package provider supports the following cmdlets.
 
 * Get-Package
+* Uninstall-Package
 
 ## Dynamic Parameters
 
