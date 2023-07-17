@@ -25,7 +25,7 @@ Find-PSResource -Tag AnyPackage, Provider
 | --------------- | ------------------------ | --------------- |
 | Chocolatey      | AnyPackage.Chocolatey    | [anypackage/chocolatey](https://github.com/anypackage/chocolatey) |
 | Msu             | AnyPackage.Msu           | [anypackage/msu](https://github.com/anypackage/msu) |
-| PowerShellGet   | AnyPackage.PowerShellGet | [anypackage/powershellget](https://github.com/anypackage/powershellget) |
+| PSResourceGet   | AnyPackage.PSResourceGet | [anypackage/psresourceget](https://github.com/anypackage/psresourceget) |
 | Programs        | AnyPackage.Programs      | [anypackage/programs](https://github.com/anypackage/programs) |
 | Scoop           | AnyPackage.Scoop         | [anypackage/scoop](https://github.com/anypackage/scoop) |
 | WinGet          | AnyPackage.WinGet        | [anypackage/winget](https://github.com/anypackage/winget) |
