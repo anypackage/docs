@@ -1,8 +1,8 @@
 ---
-Module Name: AnyPackage.PowerShellGet
-Module Guid: cc680200-a0c8-40df-a004-64c3899a72c9
+Module Name: AnyPackage.PSResourceGet
+Module Guid: 4ffeffd3-7f83-4655-ac94-19eb41ebc792
 Download Help Link: https://go.anypackage.dev/help
-Help Version: 0.2.0.0
+Help Version: 0.3.0.0
 Locale: en-US
 nav_exclude: true
 search_exclude: true

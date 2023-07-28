@@ -1,21 +1,21 @@
 ---
-title: PowerShellGet
+title: PSResourceGet
 parent: Provider Catalog
 ---
 
-# PowerShellGet_Package_Provider
+# PSResourceGet_Package_Provider
 
-## about_PowerShellGet_Package_Provider
+## about_PSResourceGet_Package_Provider
 
 ## Short Description
 
-Provides access to PowerShellGet.
+Provides access to PSResourceGet.
 
 ## Long Description
 
-The PowerShellGet package provider for `AnyPackage` module lets you use PowerShellGet using standardized commands.
+The PSResourceGet package provider for `AnyPackage` module lets you use PSResourceGet using standardized commands.
 
-The PowerShellGet package provider supports the following cmdlets.
+The PSResourceGet package provider supports the following cmdlets.
 
 * Find-Package
 * Get-Package
@@ -32,7 +32,7 @@ The PowerShellGet package provider supports the following cmdlets.
 ## Dynamic Parameters
 
 Dynamic parameters are cmdlet parameters that are added by a package
-provider and are available only when `-Provider PowerShellGet` parameter is used.
+provider and are available only when `-Provider PSResourceGet` parameter is used.
 
 ### ApiKey \<System.String\>
 
@@ -74,7 +74,7 @@ Optional credentials to be used when accessing a repository.
 * Save-Package
 * Update-Package
 
-### CredentialInfo \<Microsoft.PowerShell.PowerShellGet.UtilClasses.PSCredentialInfo\>
+### CredentialInfo \<Microsoft.PowerShell.PSResourceGet.UtilClasses.PSCredentialInfo\>
 
 A PSCredentialInfo object that includes the name of a vault and a secret that is stored in a Microsoft.PowerShell.SecretManagement store.
 
@@ -174,7 +174,7 @@ If an older version of the module is installed, the new version is installed sid
 
 * Install-Package
 
-### Scope \<Microsoft.PowerShell.PowerShellGet.UtilClasses.ScopeType\>
+### Scope \<Microsoft.PowerShell.PSResourceGet.UtilClasses.ScopeType\>
 
 Specifies the scope of the resource.
 Scope types supported are:
@@ -236,7 +236,7 @@ If no temporary path is provided, the resource is temporarily installed in the c
 * Save-Package
 * Update-Package
 
-### Type \<Microsoft.PowerShell.PowerShellGet.UtilClasses.ResourceType\>
+### Type \<Microsoft.PowerShell.PSResourceGet.UtilClasses.ResourceType\>
 
 Specifies one or more resource types to find.
 Resource types supported are:
