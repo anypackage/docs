@@ -25,7 +25,7 @@ The Programs package provider supports the following cmdlets.
 Dynamic parameters are cmdlet parameters that are added by a package
 provider and are available only when `-Provider Apt` parameter is used.
 
-None
+The Apt provider currently has no dynamic parameters.
 
 ## See Also
 

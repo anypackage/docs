@@ -31,7 +31,7 @@ The WinGet package provider supports the following cmdlets.
 Dynamic parameters are cmdlet parameters that are added by a package
 provider and are available only when `-Provider WinGet` parameter is used.
 
-The WinGet provider currently has no dynamic parameters. 
+The WinGet provider currently has no dynamic parameters.
 
 ## See Also
 
