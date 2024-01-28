@@ -1,5 +1,5 @@
 ---
-title: ModuleFat
+title: ModuleFast
 parent: Provider Catalog
 ---
 
