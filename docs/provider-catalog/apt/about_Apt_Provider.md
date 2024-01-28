@@ -13,7 +13,7 @@ Provides access to the Advanced Package Tool (APT).
 
 ## Long Description
 
-The  Advanced Package Tool (APT) package provider for `AnyPackage` module lets you interact with APT using standardized commands.
+The Advanced Package Tool (APT) package provider for `AnyPackage` module lets you interact with APT using standardized commands.
 
 The Programs package provider supports the following cmdlets.
 

@@ -25,6 +25,7 @@ Find-PSResource -Tag AnyPackage, Provider
 | --------------- | ------------------------ | --------------- |
 | Apt             | AnyPackage.Apt           | [anypackage/apt](https://github.com/anypackage/apt) |
 | Chocolatey      | AnyPackage.Chocolatey    | [anypackage/chocolatey](https://github.com/anypackage/chocolatey) |
+| ModuleFast      | AnyPackage.ModuleFast    | [anypackage/modulefast](https://github.com/anypackage/modulefast) |
 | Msu             | AnyPackage.Msu           | [anypackage/msu](https://github.com/anypackage/msu) |
 | PSResourceGet   | AnyPackage.PSResourceGet | [anypackage/psresourceget](https://github.com/anypackage/psresourceget) |
 | Programs        | AnyPackage.Programs      | [anypackage/programs](https://github.com/anypackage/programs) |
