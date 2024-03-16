@@ -31,29 +31,7 @@ The Homebrew package provider supports the following cmdlets.
 Dynamic parameters are cmdlet parameters that are added by a package
 provider and are available only when `-Provider Homebrew` parameter is used.
 
-### Params <System.String>
-
-Parameters to pass to the package being installed.
-
-#### Cmdlets Supported
-
-* Install-Package
-
-### ParamsGlobal <System.Management.Automation.SwitchParameter>
-
-Apply package parameters to dependencies of package being installed.
-
-#### Cmdlets Supported
-
-* Install-Package
-
-### RemoveDependencies <System.Management.Automation.SwitchParameter>
-
-Uninstall dependencies of package being uninstalled.
-
-#### Cmdlets Supported
-
-* Uninstall-Package
+The Homebrew provider currently has no dynamic parameters.
 
 ## See Also
 
