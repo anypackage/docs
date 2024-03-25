@@ -28,6 +28,7 @@ Find-PSResource -Tag AnyPackage, Provider
 | Homebrew        | AnyPackage.Homebrew      | [anypackage/homebrew](https://github.com/anypackage/homebrew) |
 | ModuleFast      | AnyPackage.ModuleFast    | [anypackage/modulefast](https://github.com/anypackage/modulefast) |
 | Msu             | AnyPackage.Msu           | [anypackage/msu](https://github.com/anypackage/msu) |
+| .NET Tool       | AnyPackage.DotNet.Tool   | [anypackage/dotnet-tool](https://github.com/anypackage/dotnet-tool)
 | PSResourceGet   | AnyPackage.PSResourceGet | [anypackage/psresourceget](https://github.com/anypackage/psresourceget) |
 | Programs        | AnyPackage.Programs      | [anypackage/programs](https://github.com/anypackage/programs) |
 | Scoop           | AnyPackage.Scoop         | [anypackage/scoop](https://github.com/anypackage/scoop) |
