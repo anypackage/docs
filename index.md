@@ -29,3 +29,7 @@ Install-Module AnyPackage
 # PSResourceGet
 Install-PSResource AnyPackage
 ```
+
+## Using AnyPackage
+
+![AnyPackage Demo](https://vhs.charm.sh/vhs-7ynK3WrPLUD0xpOjdJcxsG.gif)
