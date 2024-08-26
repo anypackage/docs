@@ -3,6 +3,12 @@
         "anypackage",
         "Authenticode",
         "creativecommons",
-        "Nieto"
+        "LOCALAPPDATA",
+        "modulefast",
+        "Nieto",
+        "nupkg",
+        "psresourceget",
+        "Uninitializing",
+        "winget"
     ]
 }

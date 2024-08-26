@@ -76,9 +76,9 @@ Default value: False
 
 ### Provider
 
-Specifies the package provider full name.
-The provider full name is in the following format: ModuleName\ProviderName.
-For AnyPackage PSResourceGet provider it would be: AnyPackage.PSResourceGet\PSResourceGet.
+Specifies the package provider full name. The provider full name is in the
+following format: ModuleName\ProviderName. For AnyPackage PSResourceGet provider
+it would be: AnyPackage.PSResourceGet\PSResourceGet.
 
 ```yaml
 Attribute: Key
@@ -88,8 +88,8 @@ Default value: None
 
 ### Reasons
 
-Returns reasons why the resource is not in compliance.
-The `Code` property is the unique identifier and `Phrase` property is the human readable reason.
+Returns reasons why the resource is not in compliance. The `Code` property is
+the unique identifier and `Phrase` property is the human readable reason.
 
 ```yaml
 Attribute: Read
@@ -109,12 +109,14 @@ Default value: None
 
 ### Version
 
-Specifies the package version.
-The format is NuGet version range syntax with minor changes.
-To specify any package version use `*`.
-In normal NuGet version range value of `1.0` would be minimum version inclusive but this parameter converts that value to be exact version of `[1.0]`.
-If you need to have minimum version inclusive then use this format `[1.0,]`.
-For more information refer to [NuGet version range syntax](https://learn.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges).
+Specifies the package version. The format is NuGet version range syntax with
+minor changes. To specify any package version use `*`. In normal NuGet version
+range value of `1.0` would be minimum version inclusive but this parameter
+converts that value to be exact version of `[1.0]`. If you need to have minimum
+version inclusive then use this format `[1.0,]`. For more information refer to
+[NuGet version range syntax][nuget].
+
+[nuget]: https://learn.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges
 
 ```yaml
 Attribute: Key

@@ -64,9 +64,9 @@ Default value: None
 
 ### Provider
 
-Specifies the package provider full name.
-The provider full name is in the following format: ModuleName\ProviderName.
-For AnyPackage PSResourceGet provider it would be: AnyPackage.PSResourceGet\PSResourceGet.
+Specifies the package provider full name. The provider full name is in the
+following format: ModuleName\ProviderName. For AnyPackage PSResourceGet provider
+it would be: AnyPackage.PSResourceGet\PSResourceGet.
 
 ```yaml
 Attribute: Key
@@ -76,8 +76,8 @@ Default value: None
 
 ### Reasons
 
-Returns reasons why the resource is not in compliance.
-The `Code` property is the unique identifier and `Phrase` property is the human readable reason.
+Returns reasons why the resource is not in compliance. The `Code` property is
+the unique identifier and `Phrase` property is the human readable reason.
 
 ```yaml
 Attribute: Read
@@ -87,8 +87,8 @@ Default value: N/A
 
 ### Trusted
 
-Specifies if the package source is trusted.
-If set to `true` it prevents interactive untrusted source prompts.
+Specifies if the package source is trusted. If set to `true` it prevents
+interactive untrusted source prompts.
 
 ```yaml
 Attribute: Write

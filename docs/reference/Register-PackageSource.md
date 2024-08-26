@@ -14,7 +14,7 @@ Registers a package source.
 
 ## SYNTAX
 
-```
+```text
 Register-PackageSource [-Name] <String> [-Location] <String> [-Provider] <String> [-Trusted] [-PassThru]
  [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,7 +31,8 @@ Registers a package source.
 Register-PackageSource -Name Test -Location C:\TestRepo -Provider PowerShellGet
 ```
 
-This command registers a package source named `Test` for the `PowerShellGet` provider.
+This command registers a package source named `Test` for the `PowerShellGet`
+provider.
 
 ## PARAMETERS
 
@@ -85,8 +86,8 @@ Accept wildcard characters: False
 
 ### -PassThru
 
-Returns a PackageSourceInfo object that represents the source that was registered.
-By default, `Register-PackageSource` doesn't generate any output.
+Returns a PackageSourceInfo object that represents the source that was
+registered. By default, `Register-PackageSource` doesn't generate any output.
 
 ```yaml
 Type: SwitchParameter
@@ -118,8 +119,8 @@ Accept wildcard characters: False
 
 ### -Trusted
 
-Specifies the package source is trusted.
-Stops prompts for an untrusted source when installing packages.
+Specifies the package source is trusted. Stops prompts for an untrusted source
+when installing packages.
 
 ```yaml
 Type: SwitchParameter
@@ -151,8 +152,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happen if the cmdlet runs. The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -168,7 +168,11 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction,
+-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable,
+-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+For more information, see
+[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -180,7 +184,8 @@ You can use the pipeline to send a string for the source name.
 
 ### AnyPackage.Provider.PackageSourceInfo
 
-By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter to a return objects that represent a package source.
+By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter
+to a return objects that represent a package source.
 
 ## NOTES
 

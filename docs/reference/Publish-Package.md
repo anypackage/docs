@@ -14,7 +14,7 @@ Publishes a package.
 
 ## SYNTAX
 
-```
+```text
 Publish-Package [-Path] <String> [-Provider] <String> [-Source <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,7 +31,8 @@ Publishes a package.
 Publish-Package -Path C:\module -Provider PowerShellGet -Source PSGallery
 ```
 
-This command publishes the module to `PSGallery` using the `PowerShellGet` provider.
+This command publishes the module to `PSGallery` using the `PowerShellGet`
+provider.
 
 ## PARAMETERS
 
@@ -134,7 +135,11 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction,
+-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable,
+-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+For more information, see
+[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -146,7 +151,8 @@ You can a path to this cmdlet.
 
 ### AnyPackage.Provider.PackageInfo
 
-By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter to a return objects that represent a package.
+By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter
+to a return objects that represent a package.
 
 ## NOTES
 

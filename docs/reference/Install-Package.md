@@ -16,7 +16,7 @@ Installs the package.
 
 ### Name (Default)
 
-```
+```text
 Install-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <String>] [-Prerelease]
  [-PassThru] [-TrustSource] [-Provider <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -24,28 +24,28 @@ Install-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-Source <
 
 ### InputObject
 
-```
+```text
 Install-Package <PackageInfo[]> [-PassThru] [-TrustSource] [-InputObject]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Path
 
-```
+```text
 Install-Package -Path <String[]> [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### LiteralPath
 
-```
+```text
 Install-Package -LiteralPath <String[]> [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Uri
 
-```
+```text
 Install-Package -Uri <Uri[]> [-PassThru] [-Provider <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -68,9 +68,10 @@ This command installs the PowerShellGet package.
 
 ### -InputObject
 
-Specifies a PackageInfo object that represents the package to install.
-Enter a variable that contains the object, or type a command or expression that gets the object, such as a `Find-Package` command.
-You can use the pipeline to send a package object to `Install-Package`.
+Specifies a PackageInfo object that represents the package to install. Enter a
+variable that contains the object, or type a command or expression that gets the
+object, such as a `Find-Package` command. You can use the pipeline to send a
+package object to `Install-Package`.
 
 ```yaml
 Type: PackageInfo[]
@@ -182,11 +183,14 @@ Accept wildcard characters: False
 
 ### -Version
 
-Specifies the package version.
-The format is NuGet version range syntax with minor changes.
-In normal NuGet version range value of `1.0` would be minimum version inclusive but this parameter converts that value to be exact version of `[1.0]`.
-If you need to have minimum version inclusive then use this format `[1.0,]`.
-For more information refer to [NuGet version range syntax](https://learn.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges).
+Specifies the package version. The format is NuGet version range syntax with
+minor changes. In normal NuGet version range value of `1.0` would be minimum
+version inclusive but this parameter converts that value to be exact version of
+`[1.0]`. If you need to have minimum version inclusive then use this format
+`[1.0,]`. For more information refer to
+[NuGet version range syntax][nuget-syntax].
+
+[nuget-syntax]: https://learn.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges
 
 ```yaml
 Type: PackageVersionRange
@@ -235,11 +239,11 @@ Accept wildcard characters: False
 
 ### -LiteralPath
 
-Specifies a path to one or more locations.
-The value of LiteralPath is used exactly as it's typed.
-No characters are interpreted as wildcards.
-If the path includes escape characters, enclose it in single quotation marks.
-Single quotation marks tell PowerShell to not interpret any characters as escape sequences.
+Specifies a path to one or more locations. The value of LiteralPath is used
+exactly as it's typed. No characters are interpreted as wildcards. If the path
+includes escape characters, enclose it in single quotation marks. Single
+quotation marks tell PowerShell to not interpret any characters as escape
+sequences.
 
 ```yaml
 Type: String[]
@@ -288,7 +292,11 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction,
+-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable,
+-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+For more information, see
+[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -300,7 +308,8 @@ You can pipe a package name, version range, and package info to this cmdlet.
 
 ### AnyPackage.Provider.PackageInfo
 
-By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter to a return objects that represent a package.
+By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter
+to a return objects that represent a package.
 
 ## NOTES
 

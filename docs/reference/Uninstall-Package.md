@@ -16,14 +16,14 @@ Uninstalls a package.
 
 ### Name (Default)
 
-```
+```text
 Uninstall-Package [-Name] <String[]> [[-Version] <PackageVersionRange>] [-PassThru] [-Provider <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### InputObject
 
-```
+```text
 Uninstall-Package [-InputObject] <PackageInfo[]> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -46,9 +46,10 @@ This command uninstalls the `PackageManagement` package.
 
 ### -InputObject
 
-Specifies a PackageInfo object that represents the package to uninstall.
-Enter a variable that contains the object, or type a command or expression that gets the object, such as a `Get-Package` command.
-You can use the pipeline to send a package object to `Uninstall-Package`.
+Specifies a PackageInfo object that represents the package to uninstall. Enter a
+variable that contains the object, or type a command or expression that gets the
+object, such as a `Get-Package` command. You can use the pipeline to send a
+package object to `Uninstall-Package`.
 
 ```yaml
 Type: PackageInfo[]
@@ -112,11 +113,14 @@ Accept wildcard characters: False
 
 ### -Version
 
-Specifies the package version.
-The format is NuGet version range syntax with minor changes.
-In normal NuGet version range value of `1.0` would be minimum version inclusive but this parameter converts that value to be exact version of `[1.0]`.
-If you need to have minimum version inclusive then use this format `[1.0,]`.
-For more information refer to [NuGet version range syntax](https://learn.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges).
+Specifies the package version. The format is NuGet version range syntax with
+minor changes. In normal NuGet version range value of `1.0` would be minimum
+version inclusive but this parameter converts that value to be exact version of
+`[1.0]`. If you need to have minimum version inclusive then use this format
+`[1.0,]`. For more information refer to
+[NuGet version range syntax][nuget-syntax].
+
+[nuget-syntax]: https://learn.microsoft.com/en-us/nuget/concepts/package-versioning#version-ranges
 
 ```yaml
 Type: PackageVersionRange
@@ -165,7 +169,11 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction,
+-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable,
+-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+For more information, see
+[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -177,7 +185,8 @@ You can pipe a package name, version range, and package info to this cmdlet.
 
 ### AnyPackage.Provider.PackageInfo
 
-By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter to a return objects that represent a package.
+By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter
+to a return objects that represent a package.
 
 ## NOTES
 
