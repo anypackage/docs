@@ -1,0 +1,5 @@
+{
+    "ignores": [
+        "docs/api/*.md"
+    ]
+}

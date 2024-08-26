@@ -23,13 +23,24 @@ Find-PSResource -Tag AnyPackage, Provider
 
 | Package Manager | Module                   | Project Page    |
 | --------------- | ------------------------ | --------------- |
-| .NET Tool       | AnyPackage.DotNet.Tool   | [anypackage/dotnet-tool](https://github.com/anypackage/dotnet-tool)
-| Apt             | AnyPackage.Apt           | [anypackage/apt](https://github.com/anypackage/apt) |
-| Chocolatey      | AnyPackage.Chocolatey    | [anypackage/chocolatey](https://github.com/anypackage/chocolatey) |
-| Homebrew        | AnyPackage.Homebrew      | [anypackage/homebrew](https://github.com/anypackage/homebrew) |
-| ModuleFast      | AnyPackage.ModuleFast    | [anypackage/modulefast](https://github.com/anypackage/modulefast) |
-| Msu             | AnyPackage.Msu           | [anypackage/msu](https://github.com/anypackage/msu) |
-| PSResourceGet   | AnyPackage.PSResourceGet | [anypackage/psresourceget](https://github.com/anypackage/psresourceget) |
-| Programs        | AnyPackage.Programs      | [anypackage/programs](https://github.com/anypackage/programs) |
-| Scoop           | AnyPackage.Scoop         | [anypackage/scoop](https://github.com/anypackage/scoop) |
-| WinGet          | AnyPackage.WinGet        | [anypackage/winget](https://github.com/anypackage/winget) |
+| .NET Tool       | AnyPackage.DotNet.Tool   | [anypackage/dotnet-tool] |
+| Apt             | AnyPackage.Apt           | [anypackage/apt] |
+| Chocolatey      | AnyPackage.Chocolatey    | [anypackage/chocolatey] |
+| Homebrew        | AnyPackage.Homebrew      | [anypackage/homebrew] |
+| ModuleFast      | AnyPackage.ModuleFast    | [anypackage/modulefast] |
+| Msu             | AnyPackage.Msu           | [anypackage/msu] |
+| PSResourceGet   | AnyPackage.PSResourceGet | [anypackage/psresourceget] |
+| Programs        | AnyPackage.Programs      | [anypackage/programs] |
+| Scoop           | AnyPackage.Scoop         | [anypackage/scoop] |
+| WinGet          | AnyPackage.WinGet        | [anypackage/winget] |
+
+[anypackage/dotnet-tool]: https://github.com/anypackage/dotnet-tool
+[anypackage/apt]: https://github.com/anypackage/apt
+[anypackage/chocolatey]: https://github.com/anypackage/chocolatey
+[anypackage/homebrew]: https://github.com/anypackage/homebrew
+[anypackage/modulefast]: https://github.com/anypackage/modulefast
+[anypackage/msu]: https://github.com/anypackage/msu
+[anypackage/psresourceget]: https://github.com/anypackage/psresourceget
+[anypackage/programs]: https://github.com/anypackage/programs
+[anypackage/scoop]: https://github.com/anypackage/scoop
+[anypackage/winget]: https://github.com/anypackage/winget

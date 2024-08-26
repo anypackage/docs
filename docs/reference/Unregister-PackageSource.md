@@ -14,7 +14,7 @@ Unregister a package source.
 
 ## SYNTAX
 
-```
+```text
 Unregister-PackageSource [-Name] <String[]> [-Provider <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -53,8 +53,9 @@ Accept wildcard characters: False
 
 ### -PassThru
 
-Returns a PackageSourceInfo object that represents the source that was unregistered.
-By default, `Unregister-PackageSource` doesn't generate any output.
+Returns a PackageSourceInfo object that represents the source that was
+unregistered. By default, `Unregister-PackageSource` doesn't generate any
+output.
 
 ```yaml
 Type: SwitchParameter
@@ -119,7 +120,11 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction,
+-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable,
+-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+For more information, see
+[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -131,7 +136,8 @@ You can use the pipeline to send a string for the source name.
 
 ### AnyPackage.Provider.PackageSourceInfo
 
-By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter to a return objects that represent a package source.
+By default, this cmdlet doesn't return any objects. Use the `PassThru` parameter
+to a return objects that represent a package source.
 
 ## NOTES
 
