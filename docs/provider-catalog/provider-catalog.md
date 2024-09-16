@@ -29,6 +29,7 @@ Find-PSResource -Tag AnyPackage, Provider
 | Homebrew        | AnyPackage.Homebrew      | [anypackage/homebrew] |
 | ModuleFast      | AnyPackage.ModuleFast    | [anypackage/modulefast] |
 | Msu             | AnyPackage.Msu           | [anypackage/msu] |
+| pkgx            | AnyPackage.Pkgx          | [anypackage/pkgx] |
 | PSResourceGet   | AnyPackage.PSResourceGet | [anypackage/psresourceget] |
 | Programs        | AnyPackage.Programs      | [anypackage/programs] |
 | Scoop           | AnyPackage.Scoop         | [anypackage/scoop] |
@@ -40,6 +41,7 @@ Find-PSResource -Tag AnyPackage, Provider
 [anypackage/homebrew]: https://github.com/anypackage/homebrew
 [anypackage/modulefast]: https://github.com/anypackage/modulefast
 [anypackage/msu]: https://github.com/anypackage/msu
+[anypackage/pkgx]: https://github.com/anypackage/pkgx
 [anypackage/psresourceget]: https://github.com/anypackage/psresourceget
 [anypackage/programs]: https://github.com/anypackage/programs
 [anypackage/scoop]: https://github.com/anypackage/scoop
