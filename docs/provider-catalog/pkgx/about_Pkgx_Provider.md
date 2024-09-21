@@ -18,6 +18,8 @@ The `pkgx` package provider for `AnyPackage` module lets you interact with
 
 The Programs package provider supports the following cmdlets.
 
+- Find-Package
+- Get-Package
 - Install-Package
 - Uninstall-Package
 
