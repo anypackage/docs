@@ -34,6 +34,7 @@ Find-PSResource -Tag AnyPackage, Provider
 | Programs        | AnyPackage.Programs      | [anypackage/programs] |
 | Scoop           | AnyPackage.Scoop         | [anypackage/scoop] |
 | WinGet          | AnyPackage.WinGet        | [anypackage/winget] |
+| Wsl             | AnyPackage.Wsl           | [anypackage/wsl] |
 
 [anypackage/dotnet-tool]: https://github.com/anypackage/dotnet-tool
 [anypackage/apt]: https://github.com/anypackage/apt
@@ -46,3 +47,4 @@ Find-PSResource -Tag AnyPackage, Provider
 [anypackage/programs]: https://github.com/anypackage/programs
 [anypackage/scoop]: https://github.com/anypackage/scoop
 [anypackage/winget]: https://github.com/anypackage/winget
+[anypackage/wsl]: https://github.com/anypackage/wsl
