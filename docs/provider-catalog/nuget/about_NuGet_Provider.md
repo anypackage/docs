@@ -40,7 +40,7 @@ information refer to [dependency resolution] page.
 Behaviors supported are:
 
 - Lowest
-- HighestPath
+- HighestPatch
 - HighestMinor
 - Highest
 
