@@ -9,12 +9,12 @@ parent: Provider Catalog
 
 ## Short Description
 
-Provides access to Windows programs.
+Provides access to Windows Installer.
 
 ## Long Description
 
-The Windows programs package provider for `AnyPackage` module lets you manage
-Windows Installer.
+The Windows Installer package provider for `AnyPackage` module lets you manage
+MSI and MSP files.
 
 The Msi package provider supports the following cmdlets.
 
