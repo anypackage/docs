@@ -28,6 +28,7 @@ Find-PSResource -Tag AnyPackage, Provider
 | Chocolatey      | AnyPackage.Chocolatey    | [anypackage/chocolatey] |
 | Homebrew        | AnyPackage.Homebrew      | [anypackage/homebrew] |
 | ModuleFast      | AnyPackage.ModuleFast    | [anypackage/modulefast] |
+| Msi             | AnyPackage.Msi           | [anypackage/msi] |
 | Msu             | AnyPackage.Msu           | [anypackage/msu] |
 | NuGet           | AnyPackage.NuGet         | [anypackage/nuget] |
 | pkgx            | AnyPackage.Pkgx          | [anypackage/pkgx] |
@@ -42,6 +43,7 @@ Find-PSResource -Tag AnyPackage, Provider
 [anypackage/chocolatey]: https://github.com/anypackage/chocolatey
 [anypackage/homebrew]: https://github.com/anypackage/homebrew
 [anypackage/modulefast]: https://github.com/anypackage/modulefast
+[anypackage/msi]: https://github.com/anypackage/msi
 [anypackage/msu]: https://github.com/anypackage/msu
 [anypackage/nuget]: https://github.com/anypackage/nuget
 [anypackage/pkgx]: https://github.com/anypackage/pkgx
