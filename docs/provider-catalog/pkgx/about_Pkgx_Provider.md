@@ -16,7 +16,7 @@ Provides access to the `pkgx` package manager.
 The `pkgx` package provider for `AnyPackage` module lets you interact with
 `pkgx` using standardized commands.
 
-The Programs package provider supports the following cmdlets.
+The Pkgx package provider supports the following cmdlets.
 
 - Find-Package
 - Get-Package
