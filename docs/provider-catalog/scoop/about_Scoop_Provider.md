@@ -22,6 +22,7 @@ The Scoop package provider supports the following cmdlets.
 - Get-Package
 - Get-PackageSource
 - Install-Package
+- Optimize-Package
 - Register-PackageSource
 - Set-PackageSource
 - Uninstall-Package
@@ -47,6 +48,14 @@ Scope types supported are:
 - Install-Package
 - Uninstall-Package
 - Update-Package
+
+### DownloadCache \<System.Management.Automation.SwitchParameter\>
+
+Remove outdated download cache.
+
+#### Cmdlets Supported
+
+- Optimize-Package
 
 ### NoCache \<System.Management.Automation.SwitchParameter\>
 
