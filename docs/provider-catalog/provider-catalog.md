@@ -31,6 +31,7 @@ Find-PSResource -Tag AnyPackage, Provider
 | ModuleFast      | AnyPackage.ModuleFast    | [anypackage/modulefast] |
 | Msi             | AnyPackage.Msi           | [anypackage/msi] |
 | Msu             | AnyPackage.Msu           | [anypackage/msu] |
+| Npm             | AnyPackage.Npm           | [anypackage/npm] |
 | NuGet           | AnyPackage.NuGet         | [anypackage/nuget] |
 | pkgx            | AnyPackage.Pkgx          | [anypackage/pkgx] |
 | PSResourceGet   | AnyPackage.PSResourceGet | [anypackage/psresourceget] |
@@ -47,6 +48,7 @@ Find-PSResource -Tag AnyPackage, Provider
 [anypackage/modulefast]: https://github.com/anypackage/modulefast
 [anypackage/msi]: https://github.com/anypackage/msi
 [anypackage/msu]: https://github.com/anypackage/msu
+[anypackage/npm]: https://github.com/anypackage/npm
 [anypackage/nuget]: https://github.com/anypackage/nuget
 [anypackage/pkgx]: https://github.com/anypackage/pkgx
 [anypackage/psresourceget]: https://github.com/anypackage/psresourceget
