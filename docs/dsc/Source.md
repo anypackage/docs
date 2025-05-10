@@ -47,7 +47,7 @@ Default value: Present
 Specifies the package source location.
 
 ```yaml
-Attribute: Required
+Attribute: Write
 Type: string
 Default value: None
 ```
