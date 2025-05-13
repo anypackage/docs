@@ -27,6 +27,7 @@ Find-PSResource -Tag AnyPackage, Provider
 | Appx            | AnyPackage.Appx          | [anypackage/appx] |
 | Apt             | AnyPackage.Apt           | [anypackage/apt] |
 | Chocolatey      | AnyPackage.Chocolatey    | [anypackage/chocolatey] |
+| Docker          | AnyPackage.Docker        | [anypackage/docker] |
 | Homebrew        | AnyPackage.Homebrew      | [anypackage/homebrew] |
 | ModuleFast      | AnyPackage.ModuleFast    | [anypackage/modulefast] |
 | Msi             | AnyPackage.Msi           | [anypackage/msi] |
@@ -44,6 +45,7 @@ Find-PSResource -Tag AnyPackage, Provider
 [anypackage/appx]: https://github.com/anypackage/appx
 [anypackage/apt]: https://github.com/anypackage/apt
 [anypackage/chocolatey]: https://github.com/anypackage/chocolatey
+[anypackage/docker]: https://github.com/anypackage/docker
 [anypackage/homebrew]: https://github.com/anypackage/homebrew
 [anypackage/modulefast]: https://github.com/anypackage/modulefast
 [anypackage/msi]: https://github.com/anypackage/msi
